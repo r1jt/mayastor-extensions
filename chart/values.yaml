@@ -20,12 +20,11 @@ image:
     #       release/pre-release container image tags.
     #       The below tag values will be picked for images by default.
     #       If not specified, 'tag' option provided above will be picked.
-    controlPlane: ""
-    dataPlane: ""
-    extensions: ""
+    controlPlane: 1a033a50c9b5
+    dataPlane: bcb7fbe89043
+    extensions: 9659b34d7394
   # -- ImagePullPolicy for our images
-  pullPolicy: Always
-
+  pullPolicy: IfNotPresent
   # -- docker-secrets required to pull images if the container registry from image.registry is protected
   pullSecrets: []
 
@@ -112,7 +111,7 @@ base:
       port: 4317
       initContainer:
         - name: jaeger-probe
-          command: [ 'sh', '-c', 'trap "exit 1" TERM; until nc -vzw 5 -u {{.Values.base.jaeger.collector.name}} {{.Values.base.jaeger.collector.port}}; do date; echo "Waiting for jaeger..."; sleep 1; done;' ]
+          command: ['sh', '-c', 'trap "exit 1" TERM; until nc -vzw 5 -u {{.Values.base.jaeger.collector.name}} {{.Values.base.jaeger.collector.port}}; do date; echo "Waiting for jaeger..."; sleep 1; done;']
   initRestContainer:
     enabled: true
     initContainer:
