@@ -1,0 +1,120 @@
+Control plane agent (core) revision 11017a07de5c (v2.9.0-alpha.0+9)
+Using options: CliArgs { cache_period: Duration(30s), reconcile_idle_period: Duration(30s), reconcile_period: Duration(10s), faulted_child_wait_period: None, pool_async_creat_tmo: Duration(900s), disable_partial_rebuild: false, disable_target_acc: false, deadline: Duration(10s), store: "mayastor-etcd:2379", store_timeout: Duration(5s), store_lease_ttl: Duration(30s), connect_timeout: Duration(1s), request_timeout: Duration(5s), create_volume_limit: 10, hosts_acl: [Nexuses, Replicas], tracing_tags: [], no_min_timeouts: false, jaeger: None, grpc_server_addr: [::]:50051, max_rebuilds: None, thin_args: ThinArgs { pool_commitment: 250, volume_commitment: 40, snapshot_commitment: 40, volume_commitment_initial: 40 }, events_url: Some(Url { scheme: "nats", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("mayastor-nats")), port: Some(4222), path: "", query: None, fragment: None }), disable_ha: false, etcd_page_limit: 500, fmt_style: Pretty, ansi_colors: true, no_volume_health: false }
+  [2m2025-04-14T14:53:31.739356Z[0m [32m INFO[0m [1;32masync_nats[0m[32m: [32mevent: connected[0m
+    [2;3mat[0m /build/cargo-vendor-dir/async-nats-0.37.0/src/lib.rs:996
+
+  [2m2025-04-14T14:53:31.749007Z[0m [32m INFO[0m [1;32mcore::controller::registry[0m[32m: [32mConnecting to persistent store at mayastor-etcd:2379[0m
+    [2;3mat[0m control-plane/agents/src/bin/core/controller/registry.rs:145
+
+  [2m2025-04-14T14:53:31.758084Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mGranted new lease, [1;32mlease.id[0m[32m: 6802570915632215049, [1;32mlease.ttl[0m[32m: 30[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:137
+
+  [2m2025-04-14T14:53:31.773262Z[0m [32m INFO[0m [1;32mcore::controller::registry[0m[32m: [32mConnected to persistent store at mayastor-etcd:2379[0m
+    [2;3mat[0m control-plane/agents/src/bin/core/controller/registry.rs:157
+
+  [2m2025-04-14T14:53:31.773838Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLocked service with lease, [1;32mlock.name[0m[32m: CoreAgent, [1;32mlock.key[0m[32m: /openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/StoreLeaseLock/CoreAgent/5e679634c9a97409, [1;32mlease.id[0m[32m: 6802570915632215049[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:497
+    [2;3min[0m pstor::etcd_keep_alive::[1mclock[0m
+
+  [2m2025-04-14T14:53:31.780450Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLocked => KeepAlive[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:53:31.810801Z[0m [32m INFO[0m [1;32mpstor::etcd_watcher[0m[32m: [32mAdding watch key: /openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/volume/[0m
+    [2;3mat[0m utils/pstor/src/etcd_watcher.rs:51
+
+  [2m2025-04-14T14:53:31.819941Z[0m [32m INFO[0m [1;32mcore::controller::reconciler[0m[32m: [32mStarting the reconciler control loop[0m
+    [2;3mat[0m control-plane/agents/src/bin/core/controller/reconciler/mod.rs:44
+
+  [2m2025-04-14T14:53:36.656790Z[0m [32m INFO[0m [1;32mcore::node::wrapper[0m[32m: [32mPreloading node, [1;32mnode.id[0m[32m: ubuntu-mk8s-1, [1;32mnode.endpoint[0m[32m: "91.107.230.4:10124", [1;32mapi.versions[0m[32m: Some([V1]), [1;32mstartup[0m[32m: false[0m
+    [2;3mat[0m control-plane/agents/src/bin/core/node/wrapper.rs:634
+
+  [2m2025-04-14T14:53:37.064492Z[0m [32m INFO[0m [1;32mcore::node::wrapper[0m[32m: [32mPreloading node, [1;32mnode.id[0m[32m: ubuntu-mk8s-2, [1;32mnode.endpoint[0m[32m: "162.55.181.89:10124", [1;32mapi.versions[0m[32m: Some([V1]), [1;32mstartup[0m[32m: false[0m
+    [2;3mat[0m control-plane/agents/src/bin/core/node/wrapper.rs:634
+
+  [2m2025-04-14T14:54:04.819958Z[0m [31mERROR[0m [1;31mpstor::etcd_watcher[0m[31m: [31mPolling watch stream error, [1;31merror[0m[31m: grpc request error: status: Unknown, message: "h2 protocol error: error reading a body from connection", details: [], metadata: MetadataMap { headers: {} }[0m
+    [2;3mat[0m utils/pstor/src/etcd_watcher.rs:419
+
+  [2m2025-04-14T14:54:04.820030Z[0m [33m WARN[0m [1;33mpstor::etcd_watcher[0m[33m: [33mStarting etcd watch stream reconnection loop, attempt: 0[0m
+    [2;3mat[0m utils/pstor/src/etcd_watcher.rs:351
+
+  [2m2025-04-14T14:54:04.827477Z[0m [32m INFO[0m [1;32mpstor::etcd_watcher[0m[32m: [32mSuccessfully re-connected the watch stream[0m
+    [2;3mat[0m utils/pstor/src/etcd_watcher.rs:363
+
+  [2m2025-04-14T14:54:16.795947Z[0m [31mERROR[0m [1;31mpstor::etcd_keep_alive[0m[31m: [1;31merror[0m[31m: Reconnect(Reconnect(1s))[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:520
+
+  [2m2025-04-14T14:54:16.796007Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mKeepAlive => Reconnect[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:54:17.798237Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mReconnect => LeaseExpired[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:54:17.798427Z[0m [33m WARN[0m [1;33mpstor::etcd_keep_alive[0m[33m: [33mLease Expired!, [1;33mlease.id[0m[33m: 6802570915632215049[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:430
+    [2;3min[0m pstor::etcd_keep_alive::[1mclock[0m
+
+  [2m2025-04-14T14:54:17.801394Z[0m [31mERROR[0m [1;31mpstor::etcd_keep_alive[0m[31m: [1;31merror[0m[31m: LeaseGrant(LeaseGrant)[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:428
+    [2;3min[0m pstor::etcd_keep_alive::[1mclock[0m
+
+  [2m2025-04-14T14:54:17.801433Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLeaseExpired => LeaseGrant[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:54:17.802069Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLeaseGrant => Locking[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:54:17.814647Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLocking => Locked[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:54:17.814685Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLocked service with lease, [1;32mlock.name[0m[32m: CoreAgent, [1;32mlock.key[0m[32m: /openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/StoreLeaseLock/CoreAgent/5e679634c9a97409, [1;32mlease.id[0m[32m: 6802570915632215049[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:497
+    [2;3min[0m pstor::etcd_keep_alive::[1mclock[0m
+
+  [2m2025-04-14T14:54:17.815478Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLocked => KeepAlive[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:55:09.804760Z[0m [31mERROR[0m [1;31mpstor::etcd_watcher[0m[31m: [31mPolling watch stream error, [1;31merror[0m[31m: grpc request error: status: Unknown, message: "h2 protocol error: error reading a body from connection", details: [], metadata: MetadataMap { headers: {} }[0m
+    [2;3mat[0m utils/pstor/src/etcd_watcher.rs:419
+
+  [2m2025-04-14T14:55:09.804807Z[0m [33m WARN[0m [1;33mpstor::etcd_watcher[0m[33m: [33mStarting etcd watch stream reconnection loop, attempt: 0[0m
+    [2;3mat[0m utils/pstor/src/etcd_watcher.rs:351
+
+  [2m2025-04-14T14:55:09.808786Z[0m [31mERROR[0m [1;31mpstor::etcd_watcher[0m[31m: [31mSetting up watch stream, [1;31merror[0m[31m: grpc request error: status: Unavailable, message: "tcp connect error: Connection refused (os error 111)", details: [], metadata: MetadataMap { headers: {} }[0m
+    [2;3mat[0m utils/pstor/src/etcd_watcher.rs:419
+
+  [2m2025-04-14T14:55:10.815613Z[0m [32m INFO[0m [1;32mpstor::etcd_watcher[0m[32m: [32mSuccessfully re-connected the watch stream[0m
+    [2;3mat[0m utils/pstor/src/etcd_watcher.rs:363
+
+  [2m2025-04-14T14:55:17.824637Z[0m [31mERROR[0m [1;31mpstor::etcd_keep_alive[0m[31m: [1;31merror[0m[31m: Reconnect(Reconnect(1s))[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:520
+
+  [2m2025-04-14T14:55:17.824719Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mKeepAlive => Reconnect[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:55:18.828815Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mReconnect => LeaseExpired[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:55:18.828875Z[0m [33m WARN[0m [1;33mpstor::etcd_keep_alive[0m[33m: [33mLease Expired!, [1;33mlease.id[0m[33m: 6802570915632215049[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:430
+    [2;3min[0m pstor::etcd_keep_alive::[1mclock[0m
+
+  [2m2025-04-14T14:55:18.834629Z[0m [31mERROR[0m [1;31mpstor::etcd_keep_alive[0m[31m: [1;31merror[0m[31m: LeaseGrant(LeaseGrant)[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:428
+    [2;3min[0m pstor::etcd_keep_alive::[1mclock[0m
+
+  [2m2025-04-14T14:55:18.834702Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLeaseExpired => LeaseGrant[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:55:18.840633Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLeaseGrant => Locking[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:55:18.861239Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLocking => Locked[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+
+  [2m2025-04-14T14:55:18.861352Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLocked service with lease, [1;32mlock.name[0m[32m: CoreAgent, [1;32mlock.key[0m[32m: /openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/StoreLeaseLock/CoreAgent/5e679634c9a97409, [1;32mlease.id[0m[32m: 6802570915632215049[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:497
+    [2;3min[0m pstor::etcd_keep_alive::[1mclock[0m
+
+  [2m2025-04-14T14:55:18.864140Z[0m [32m INFO[0m [1;32mpstor::etcd_keep_alive[0m[32m: [32mLocked => KeepAlive[0m
+    [2;3mat[0m utils/pstor/src/etcd_keep_alive.rs:252
+

@@ -1,0 +1,291 @@
+{
+  "node": {
+    "id": "ubuntu-mk8s-2",
+    "spec": {
+      "grpcEndpoint": "162.55.181.89:10124",
+      "id": "ubuntu-mk8s-2",
+      "node_nqn": "nqn.2019-05.io.openebs:node-name:ubuntu-mk8s-2",
+      "version": "v2.9.0-alpha.0-6-g57f53b410e43"
+    },
+    "state": {
+      "grpcEndpoint": "162.55.181.89:10124",
+      "id": "ubuntu-mk8s-2",
+      "status": "Online",
+      "node_nqn": "nqn.2019-05.io.openebs:node-name:ubuntu-mk8s-2",
+      "version": "v2.9.0-alpha.0-6-g57f53b410e43"
+    }
+  },
+  "devices": [
+    {
+      "available": false,
+      "connection_type": "scsi",
+      "devlinks": [
+        "/dev/disk/by-path/pci-0000:06:00.0-scsi-0:0:0:0",
+        "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_60749974",
+        "/dev/disk/by-diskseq/9"
+      ],
+      "devmajor": 8,
+      "devminor": 0,
+      "devname": "/dev/sda",
+      "devpath": "/devices/pci0000:00/0000:00:02.5/0000:06:00.0/virtio5/host0/target0:0:0/0:0:0:0/block/sda",
+      "devtype": "disk",
+      "is_rotational": false,
+      "model": "QEMU_HARDDISK",
+      "size": 320004096
+    },
+    {
+      "available": false,
+      "connection_type": "scsi",
+      "devlinks": [
+        "/dev/disk/by-partuuid/22e7a061-de22-4277-8b02-a2b564b5cef6",
+        "/dev/disk/by-diskseq/9-part1",
+        "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_60749974-part1",
+        "/dev/disk/by-path/pci-0000:06:00.0-scsi-0:0:0:0-part1",
+        "/dev/disk/by-uuid/4c720436-405e-43af-abed-be474257acd9"
+      ],
+      "devmajor": 8,
+      "devminor": 1,
+      "devname": "/dev/sda1",
+      "devpath": "/devices/pci0000:00/0000:00:02.5/0000:06:00.0/virtio5/host0/target0:0:0/0:0:0:0/block/sda/sda1",
+      "devtype": "partition",
+      "filesystem": {
+        "fstype": "ext4",
+        "label": "/etc/hosts",
+        "mountpoint": "",
+        "uuid": "4c720436-405e-43af-abed-be474257acd9"
+      },
+      "model": "QEMU_HARDDISK",
+      "partition": {
+        "name": "/dev/sda",
+        "number": 1,
+        "parent": "",
+        "scheme": "gpt",
+        "typeid": "0fc63daf-8483-4772-8e79-3d69d8477de4",
+        "uuid": "22e7a061-de22-4277-8b02-a2b564b5cef6"
+      },
+      "size": 319475679
+    },
+    {
+      "available": false,
+      "connection_type": "scsi",
+      "devlinks": [
+        "/dev/disk/by-partuuid/303004ab-6077-4017-ba88-cb8362592f95",
+        "/dev/disk/by-diskseq/9-part14",
+        "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_60749974-part14",
+        "/dev/disk/by-path/pci-0000:06:00.0-scsi-0:0:0:0-part14"
+      ],
+      "devmajor": 8,
+      "devminor": 14,
+      "devname": "/dev/sda14",
+      "devpath": "/devices/pci0000:00/0000:00:02.5/0000:06:00.0/virtio5/host0/target0:0:0/0:0:0:0/block/sda/sda14",
+      "devtype": "partition",
+      "model": "QEMU_HARDDISK",
+      "partition": {
+        "name": "/dev/sda",
+        "number": 14,
+        "parent": "",
+        "scheme": "gpt",
+        "typeid": "21686148-6449-6e6f-744e-656564454649",
+        "uuid": "303004ab-6077-4017-ba88-cb8362592f95"
+      },
+      "size": 2048
+    },
+    {
+      "available": false,
+      "connection_type": "scsi",
+      "devlinks": [
+        "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_60749974-part15",
+        "/dev/disk/by-partuuid/f9fb4bda-d17c-47b4-8b14-5cbf0efbef43",
+        "/dev/disk/by-diskseq/9-part15",
+        "/dev/disk/by-path/pci-0000:06:00.0-scsi-0:0:0:0-part15",
+        "/dev/disk/by-uuid/564D-E28E"
+      ],
+      "devmajor": 8,
+      "devminor": 15,
+      "devname": "/dev/sda15",
+      "devpath": "/devices/pci0000:00/0000:00:02.5/0000:06:00.0/virtio5/host0/target0:0:0/0:0:0:0/block/sda/sda15",
+      "devtype": "partition",
+      "filesystem": {
+        "fstype": "vfat",
+        "label": "",
+        "mountpoint": "",
+        "uuid": "564D-E28E"
+      },
+      "model": "QEMU_HARDDISK",
+      "partition": {
+        "name": "/dev/sda",
+        "number": 15,
+        "parent": "",
+        "scheme": "gpt",
+        "typeid": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
+        "uuid": "f9fb4bda-d17c-47b4-8b14-5cbf0efbef43"
+      },
+      "size": 524288
+    },
+    {
+      "available": true,
+      "connection_type": "scsi",
+      "devlinks": [
+        "/dev/disk/by-id/scsi-0HC_Volume_102407285",
+        "/dev/disk/by-diskseq/14",
+        "/dev/disk/by-path/pci-0000:06:00.0-scsi-0:0:0:1",
+        "/dev/disk/by-id/scsi-SHC_Volume_102407285"
+      ],
+      "devmajor": 8,
+      "devminor": 16,
+      "devname": "/dev/sdb",
+      "devpath": "/devices/pci0000:00/0000:00:02.5/0000:06:00.0/virtio5/host0/target0:0:0/0:0:0:1/block/sdb",
+      "devtype": "disk",
+      "is_rotational": false,
+      "model": "Volume",
+      "size": 41943040
+    },
+    {
+      "available": false,
+      "connection_type": "ata",
+      "devlinks": [
+        "/dev/disk/by-path/pci-0000:00:1f.2-ata-1.0",
+        "/dev/cdrom",
+        "/dev/disk/by-id/ata-QEMU_DVD-ROM_QM00001",
+        "/dev/disk/by-diskseq/11",
+        "/dev/disk/by-path/pci-0000:00:1f.2-ata-1"
+      ],
+      "devmajor": 11,
+      "devminor": 0,
+      "devname": "/dev/sr0",
+      "devpath": "/devices/pci0000:00/0000:00:1f.2/ata1/host1/target1:0:0/1:0:0:0/block/sr0",
+      "devtype": "disk",
+      "is_rotational": true,
+      "model": "QEMU_DVD-ROM",
+      "size": 2097151
+    },
+    {
+      "available": false,
+      "connection_type": "",
+      "devlinks": [
+        "/dev/disk/by-loop-ref/\\x2fvar\\x2flib\\x2fsnapd\\x2fsnaps\\x2fsnapd_23771.snap",
+        "/dev/disk/by-diskseq/17",
+        "/dev/disk/by-loop-inode/8:1-140187"
+      ],
+      "devmajor": 7,
+      "devminor": 0,
+      "devname": "/dev/loop0",
+      "devpath": "/devices/virtual/block/loop0",
+      "devtype": "disk",
+      "filesystem": {
+        "fstype": "squashfs",
+        "label": "",
+        "mountpoint": "",
+        "uuid": ""
+      },
+      "is_rotational": false,
+      "model": "",
+      "size": 91024
+    },
+    {
+      "available": true,
+      "connection_type": "",
+      "devlinks": [
+        "/dev/disk/by-diskseq/18"
+      ],
+      "devmajor": 7,
+      "devminor": 1,
+      "devname": "/dev/loop1",
+      "devpath": "/devices/virtual/block/loop1",
+      "devtype": "disk",
+      "is_rotational": false,
+      "model": "",
+      "size": 130552
+    },
+    {
+      "available": true,
+      "connection_type": "",
+      "devlinks": [
+        "/dev/disk/by-diskseq/3"
+      ],
+      "devmajor": 7,
+      "devminor": 2,
+      "devname": "/dev/loop2",
+      "devpath": "/devices/virtual/block/loop2",
+      "devtype": "disk",
+      "is_rotational": false,
+      "model": "",
+      "size": 336224
+    },
+    {
+      "available": false,
+      "connection_type": "",
+      "devlinks": [
+        "/dev/disk/by-diskseq/4"
+      ],
+      "devmajor": 7,
+      "devminor": 3,
+      "devname": "/dev/loop3",
+      "devpath": "/devices/virtual/block/loop3",
+      "devtype": "disk",
+      "is_rotational": true,
+      "model": "",
+      "size": 0
+    },
+    {
+      "available": false,
+      "connection_type": "",
+      "devlinks": [
+        "/dev/disk/by-diskseq/5"
+      ],
+      "devmajor": 7,
+      "devminor": 4,
+      "devname": "/dev/loop4",
+      "devpath": "/devices/virtual/block/loop4",
+      "devtype": "disk",
+      "is_rotational": true,
+      "model": "",
+      "size": 0
+    },
+    {
+      "available": false,
+      "connection_type": "",
+      "devlinks": [
+        "/dev/disk/by-diskseq/6"
+      ],
+      "devmajor": 7,
+      "devminor": 5,
+      "devname": "/dev/loop5",
+      "devpath": "/devices/virtual/block/loop5",
+      "devtype": "disk",
+      "is_rotational": true,
+      "model": "",
+      "size": 0
+    },
+    {
+      "available": false,
+      "connection_type": "",
+      "devlinks": [
+        "/dev/disk/by-diskseq/7"
+      ],
+      "devmajor": 7,
+      "devminor": 6,
+      "devname": "/dev/loop6",
+      "devpath": "/devices/virtual/block/loop6",
+      "devtype": "disk",
+      "is_rotational": true,
+      "model": "",
+      "size": 0
+    },
+    {
+      "available": false,
+      "connection_type": "",
+      "devlinks": [
+        "/dev/disk/by-diskseq/8"
+      ],
+      "devmajor": 7,
+      "devminor": 7,
+      "devname": "/dev/loop7",
+      "devpath": "/devices/virtual/block/loop7",
+      "devtype": "disk",
+      "is_rotational": true,
+      "model": "",
+      "size": 0
+    }
+  ]
+}

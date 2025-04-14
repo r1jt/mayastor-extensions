@@ -1,0 +1,43 @@
+[7] 2025/04/14 14:52:27.900099 [INF] Starting nats-server
+[7] 2025/04/14 14:52:27.900575 [INF]   Version:  2.9.17
+[7] 2025/04/14 14:52:27.900593 [INF]   Git:      [4f2c9a5]
+[7] 2025/04/14 14:52:27.900600 [INF]   Cluster:  nats
+[7] 2025/04/14 14:52:27.900614 [INF]   Name:     mayastor-nats-0
+[7] 2025/04/14 14:52:27.900724 [INF]   Node:     j4aRHYTV
+[7] 2025/04/14 14:52:27.900739 [INF]   ID:       NDHQQFZI7OLHVY5NBRH5FNMDSMJKRYIYM6QIWM2SKUNL5SLGFOEC6HS2
+[7] 2025/04/14 14:52:27.900776 [INF] Using configuration file: /etc/nats-config/nats.conf
+[7] 2025/04/14 14:52:27.902615 [INF] Starting http monitor on 0.0.0.0:8222
+[7] 2025/04/14 14:52:27.902871 [INF] Starting JetStream
+[7] 2025/04/14 14:52:27.906021 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[7] 2025/04/14 14:52:27.906199 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[7] 2025/04/14 14:52:27.906317 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[7] 2025/04/14 14:52:27.906381 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[7] 2025/04/14 14:52:27.906495 [INF] 
+[7] 2025/04/14 14:52:27.906548 [INF]          https://docs.nats.io/jetstream
+[7] 2025/04/14 14:52:27.906602 [INF] 
+[7] 2025/04/14 14:52:27.906638 [INF] ---------------- JETSTREAM ----------------
+[7] 2025/04/14 14:52:27.906665 [INF]   Max Memory:      5.00 MB
+[7] 2025/04/14 14:52:27.906694 [INF]   Max Storage:     100.06 GB
+[7] 2025/04/14 14:52:27.906720 [INF]   Store Directory: "/tmp/nats/jetstream"
+[7] 2025/04/14 14:52:27.906745 [INF] -------------------------------------------
+[7] 2025/04/14 14:52:27.907494 [INF] Starting JetStream cluster
+[7] 2025/04/14 14:52:27.907747 [INF] Creating JetStream metadata controller
+[7] 2025/04/14 14:52:27.909194 [INF] JetStream cluster bootstrapping
+[7] 2025/04/14 14:52:27.909839 [INF] Listening for client connections on 0.0.0.0:4222
+[7] 2025/04/14 14:52:27.910334 [INF] Server is ready
+[7] 2025/04/14 14:52:27.910699 [INF] Cluster name is nats
+[7] 2025/04/14 14:52:27.910824 [INF] Listening for route connections on 0.0.0.0:6222
+[7] 2025/04/14 14:52:27.911454 [WRN] JetStream has not established contact with a meta leader
+[7] 2025/04/14 14:52:27.917606 [ERR] Error trying to connect to route (attempt 1): lookup for host "mayastor-nats-1.mayastor-nats.mayastor": lookup mayastor-nats-1.mayastor-nats.mayastor on 10.152.183.10:53: no such host
+[7] 2025/04/14 14:52:27.918053 [ERR] Error trying to connect to route (attempt 1): lookup for host "mayastor-nats-0.mayastor-nats.mayastor": lookup mayastor-nats-0.mayastor-nats.mayastor on 10.152.183.10:53: no such host
+[7] 2025/04/14 14:52:27.918144 [ERR] Error trying to connect to route (attempt 1): lookup for host "mayastor-nats-2.mayastor-nats.mayastor": lookup mayastor-nats-2.mayastor-nats.mayastor on 10.152.183.10:53: no such host
+[7] 2025/04/14 14:52:28.011401 [WRN] Waiting for routing to be established...
+[7] 2025/04/14 14:52:29.920306 [WRN] Waiting for routing to be established...
+[7] 2025/04/14 14:52:31.930486 [WRN] Waiting for routing to be established...
+[7] 2025/04/14 14:52:32.868991 [INF] 10.1.70.242:52602 - rid:6 - Route connection created
+[7] 2025/04/14 14:52:32.950091 [INF] 10.1.232.114:6222 - rid:7 - Route connection created
+[7] 2025/04/14 14:52:32.950303 [INF] 10.1.70.242:6222 - rid:8 - Route connection created
+[7] 2025/04/14 14:52:32.951747 [INF] 10.1.70.242:6222 - rid:8 - Router connection closed: Duplicate Route
+[7] 2025/04/14 14:52:32.990383 [INF] 10.1.232.114:41792 - rid:9 - Route connection created
+[7] 2025/04/14 14:52:32.990805 [INF] 10.1.232.114:41792 - rid:9 - Router connection closed: Duplicate Route
+[7] 2025/04/14 14:52:38.003133 [INF] JetStream cluster new metadata leader: mayastor-nats-2/nats

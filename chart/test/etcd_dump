@@ -1,0 +1,79 @@
+/openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/AppNodeSpec/ubuntu-mk8s-1:
+{
+  "id": "ubuntu-mk8s-1",
+  "endpoint": "91.107.230.4:10199",
+  "labels": {
+    "openebs.io/csi-node.nvme-ana": "true"
+  }
+}
+
+/openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/AppNodeSpec/ubuntu-mk8s-2:
+{
+  "id": "ubuntu-mk8s-2",
+  "endpoint": "162.55.181.89:10199",
+  "labels": {
+    "openebs.io/csi-node.nvme-ana": "true"
+  }
+}
+
+/openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/AppNodeSpec/ubuntu-mk8s-3:
+{
+  "id": "ubuntu-mk8s-3",
+  "endpoint": "49.13.144.60:10199",
+  "labels": {
+    "openebs.io/csi-node.nvme-ana": "true"
+  }
+}
+
+/openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/CoreRegistryConfig/db98f8bb-4afc-45d0-85b9-24c99cc443f2:
+{
+  "id": "db98f8bb-4afc-45d0-85b9-24c99cc443f2",
+  "registration": "Automatic"
+}
+
+/openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/NodeSpec/ubuntu-mk8s-1:
+{
+  "id": "ubuntu-mk8s-1",
+  "endpoint": "91.107.230.4:10124",
+  "node_nqn": "nqn.2019-05.io.openebs:node-name:ubuntu-mk8s-1",
+  "features": {
+    "asymmetricNamespaceAccess": true,
+    "logicalVolumeManager": false,
+    "snapshotRebuild": false,
+    "rdmaCapableIoEngine": false,
+    "diskpoolEncryption": true
+  },
+  "bugfixes": {
+    "nexusRebuildReplicaAncestry": true
+  },
+  "version": "v2.9.0-alpha.0-6-g57f53b410e43"
+}
+
+/openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/NodeSpec/ubuntu-mk8s-2:
+{
+  "id": "ubuntu-mk8s-2",
+  "endpoint": "162.55.181.89:10124",
+  "node_nqn": "nqn.2019-05.io.openebs:node-name:ubuntu-mk8s-2",
+  "features": {
+    "asymmetricNamespaceAccess": true,
+    "logicalVolumeManager": false,
+    "snapshotRebuild": false,
+    "rdmaCapableIoEngine": false,
+    "diskpoolEncryption": true
+  },
+  "bugfixes": {
+    "nexusRebuildReplicaAncestry": true
+  },
+  "version": "v2.9.0-alpha.0-6-g57f53b410e43"
+}
+
+/openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/StoreLeaseLock/CoreAgent/5e679634c9a97409:
+null
+
+/openebs.io/mayastor/apis/v0/clusters/890d0cf7-69fa-454e-8f90-ae3391e8ea5d/namespaces/mayastor/StoreLeaseOwner/CoreAgent:
+{
+  "kind": "CoreAgent",
+  "lease_id": "5e679634c9a97409",
+  "instance_name": "mayastor-agent-core-65d99d7bbc-7bdc9"
+}
+

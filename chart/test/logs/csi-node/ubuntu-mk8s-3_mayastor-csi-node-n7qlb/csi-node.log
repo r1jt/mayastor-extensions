@@ -1,0 +1,29 @@
+CSI Driver (csi-node) revision 11017a07de5c (v2.9.0-alpha.0+9)
+["csi-node", "--csi-socket=/csi/csi.sock", "--node-name=ubuntu-mk8s-3", "--rest-endpoint=http://mayastor-api-rest:8081", "--enable-rest", "--enable-registration", "--grpc-ip=49.13.144.60", "--grpc-port=10199", "--nvme-io-timeout=110s10s", "--nvme-core-io-timeout=110s10s", "--nvme-ctrl-loss-tmo=1980", "--nvme-nr-io-queues=2", "--nvme-connect-fallback=true", "--kubelet-path=/var/lib/kubelet", "--node-selector=openebs.io/csi-node=mayastor", "--fmt-style=pretty", "--ansi-colors=true"]
+  [2m2025-04-14T14:52:27.551183Z[0m [32m INFO[0m [1;32mcsi_node::main_[0m[32m: [32mhost node is not rdma capable. conn_fallback(true), "0 HCAs found:\n\n"[0m
+    [2;3mat[0m control-plane/csi-driver/src/bin/node/main_.rs:327
+
+  [2m2025-04-14T14:52:27.551390Z[0m [32m INFO[0m [1;32mcsi_node::main_[0m[32m: [32mRemoved stale CSI socket /csi/csi.sock[0m
+    [2;3mat[0m control-plane/csi-driver/src/bin/node/main_.rs:347
+
+  [2m2025-04-14T14:52:27.551570Z[0m [32m INFO[0m [1;32mcsi_node::client[0m[32m: [32mAPI client is initialized with endpoint http://mayastor-api-rest:8081, request timeout = 5s[0m
+    [2;3mat[0m control-plane/csi-driver/src/bin/node/client.rs:165
+
+  [2m2025-04-14T14:52:27.551693Z[0m [32m INFO[0m [1;32mcsi_node::main_[0m[32m: [32mCSI plugin bound to /csi/csi.sock[0m
+    [2;3mat[0m control-plane/csi-driver/src/bin/node/main_.rs:401
+
+  [2m2025-04-14T14:52:27.551729Z[0m [32m INFO[0m [1;32mcsi_node::client[0m[32m: [32mVolumesClient API is initialized with endpoint http://mayastor-api-rest:8081, request timeout = 10s[0m
+    [2;3mat[0m control-plane/csi-driver/src/bin/node/client.rs:261
+
+  [2m2025-04-14T14:52:27.551762Z[0m [32m INFO[0m [1;32mcsi_node::node[0m[32m: [32mNode topology segments: {"openebs.io/nodename": "ubuntu-mk8s-3", "openebs.io/csi-node": "mayastor"}[0m
+    [2;3mat[0m control-plane/csi-driver/src/bin/node/node.rs:63
+
+  [2m2025-04-14T14:52:27.551935Z[0m [32m INFO[0m [1;32mcsi_node::nodeplugin_grpc[0m[32m: [32mnode plugin gRPC server configured at address 49.13.144.60:10199[0m
+    [2;3mat[0m control-plane/csi-driver/src/bin/node/nodeplugin_grpc.rs:159
+
+  [2m2025-04-14T14:52:27.554201Z[0m [31mERROR[0m [1;31mcsi_node::registration[0m[31m: [31mFailed to register app node: ServerCommunication("error in request: client error (Connect)")[0m
+    [2;3mat[0m control-plane/csi-driver/src/bin/node/registration.rs:39
+
+  [2m2025-04-14T14:53:57.574415Z[0m [32m INFO[0m [1;32mcsi_node::registration[0m[32m: [32mSuccessfully re-registered the app node[0m
+    [2;3mat[0m control-plane/csi-driver/src/bin/node/registration.rs:32
+

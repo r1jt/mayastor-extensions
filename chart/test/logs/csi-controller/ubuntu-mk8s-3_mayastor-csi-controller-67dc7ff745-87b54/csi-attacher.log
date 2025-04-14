@@ -1,0 +1,5 @@
+I0414 14:53:42.202452       1 main.go:96] Version: v4.3.0
+I0414 14:53:45.026321       1 common.go:111] Probing CSI driver for readiness
+I0414 14:53:45.037367       1 main.go:153] CSI driver name: "io.openebs.csi-mayastor"
+I0414 14:53:45.039398       1 main.go:229] CSI driver supports ControllerPublishUnpublish, using real CSI handler
+I0414 14:53:45.039873       1 controller.go:130] Starting CSI attacher

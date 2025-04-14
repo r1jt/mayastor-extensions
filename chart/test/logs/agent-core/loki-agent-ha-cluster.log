@@ -1,0 +1,20 @@
+2025-04-14T14:53:32.864161822Z stdout F   [2m2025-04-14T14:53:32.863880Z[0m [32m INFO[0m [1;32masync_nats[0m[32m: [32mevent: connected[0m
+2025-04-14T14:53:32.96198168Z stdout F   [2m2025-04-14T14:53:32.961718Z[0m [32m INFO[0m [1;32magent_ha_cluster::switchover[0m[32m: [32mSpawning Switchover Engine worker, [1;32mworker[0m[32m: 0[0m
+2025-04-14T14:53:32.962018143Z stdout F   [2m2025-04-14T14:53:32.961797Z[0m [32m INFO[0m [1;32magent_ha_cluster::switchover[0m[32m: [32mSpawning Switchover Engine worker, [1;32mworker[0m[32m: 1[0m
+2025-04-14T14:53:32.962031347Z stdout F   [2m2025-04-14T14:53:32.961853Z[0m [32m INFO[0m [1;32magent_ha_cluster::switchover[0m[32m: [32mSpawning Switchover Engine worker, [1;32mworker[0m[32m: 2[0m
+2025-04-14T14:53:32.96204481Z stdout F   [2m2025-04-14T14:53:32.961864Z[0m [32m INFO[0m [1;32magent_ha_cluster::switchover[0m[32m: [32mSpawning Switchover Engine worker, [1;32mworker[0m[32m: 3[0m
+2025-04-14T14:53:32.962068361Z stdout F   [2m2025-04-14T14:53:32.962007Z[0m [32m INFO[0m [1;32magent_ha_cluster[0m[32m: [32mStarting cluster-agent server[0m
+2025-04-14T14:53:32.763586785Z stdout F Control plane agent (agent-ha-cluster) revision 11017a07de5c (v2.9.0-alpha.0+9)
+2025-04-14T14:53:32.765161394Z stdout F Using options: Cli { grpc_endpoint: [::]:50052, store: http://mayastor-etcd:2379/, store_timeout: Duration(5s), core_grpc: https://mayastor-agent-core:50051/, jaeger: None, tracing_tags: [], fast_requeue: None, events_url: Some(Url { scheme: "nats", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("mayastor-nats")), port: Some(4222), path: "", query: None, fragment: None }), fmt_style: Pretty, ansi_colors: true }
+2025-04-14T14:53:32.8641949Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/async-nats-0.37.0/src/lib.rs:996
+2025-04-14T14:53:32.8642006Z stdout F
+2025-04-14T14:53:32.962009303Z stdout F     [2;3mat[0m control-plane/agents/src/bin/ha/cluster/switchover.rs:512
+2025-04-14T14:53:32.962013595Z stdout F
+2025-04-14T14:53:32.962022668Z stdout F     [2;3mat[0m control-plane/agents/src/bin/ha/cluster/switchover.rs:512
+2025-04-14T14:53:32.962026837Z stdout F
+2025-04-14T14:53:32.962036644Z stdout F     [2;3mat[0m control-plane/agents/src/bin/ha/cluster/switchover.rs:512
+2025-04-14T14:53:32.962040501Z stdout F
+2025-04-14T14:53:32.962049052Z stdout F     [2;3mat[0m control-plane/agents/src/bin/ha/cluster/switchover.rs:512
+2025-04-14T14:53:32.96205274Z stdout F
+2025-04-14T14:53:32.962073188Z stdout F     [2;3mat[0m control-plane/agents/src/bin/ha/cluster/main.rs:112
+2025-04-14T14:53:32.962077001Z stdout F

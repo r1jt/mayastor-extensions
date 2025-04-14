@@ -1,0 +1,150 @@
+[2025-04-14T14:53:36.197862246+00:00  INFO io_engine:io-engine.rs:261] Engine responsible for managing I/Os version 1.0.0, revision 57f53b410e43 (v2.9.0-alpha.0+6)
+[2025-04-14T14:53:36.198121495+00:00  INFO io_engine:io-engine.rs:240] free_pages 2MB: 1024 nr_pages 2MB: 1024
+[2025-04-14T14:53:36.198129311+00:00  INFO io_engine:io-engine.rs:241] free_pages 1GB: 0 nr_pages 1GB: 0
+[2025-04-14T14:53:36.198348556+00:00  INFO io_engine:io-engine.rs:292] kernel io_uring support: yes
+[2025-04-14T14:53:36.198362546+00:00  INFO io_engine:io-engine.rs:296] kernel nvme initiator multipath support: yes
+[2025-04-14T14:53:36.198408830+00:00  INFO io_engine::core::env:env.rs:947] loading mayastor config YAML file /var/local/mayastor/io-engine/config.yaml
+[2025-04-14T14:53:36.198453190+00:00  INFO io_engine::subsys::config:mod.rs:182] Config file /var/local/mayastor/io-engine/config.yaml is empty, reverting to default config
+[2025-04-14T14:53:36.198477111+00:00  INFO io_engine::subsys::config::opts:opts.rs:201] Overriding NVMF_TCP_MAX_QUEUE_DEPTH value to '32'
+[2025-04-14T14:53:36.198490179+00:00  INFO io_engine::subsys::config::opts:opts.rs:201] Overriding NVMF_TCP_MAX_QPAIRS_PER_CTRL value to '32'
+[2025-04-14T14:53:36.198506260+00:00  INFO io_engine::subsys::config::opts:opts.rs:201] Overriding NVMF_TCP_MAX_QUEUE_DEPTH value to '32'
+[2025-04-14T14:53:36.198510698+00:00  INFO io_engine::subsys::config::opts:opts.rs:201] Overriding NVMF_TCP_MAX_QPAIRS_PER_CTRL value to '32'
+[2025-04-14T14:53:36.198531585+00:00  INFO io_engine::subsys::config::opts:opts.rs:267] Overriding NVME_TIMEOUT value to '110s'
+[2025-04-14T14:53:36.198535412+00:00  INFO io_engine::subsys::config::opts:opts.rs:267] Overriding NVME_TIMEOUT_ADMIN value to '30s'
+[2025-04-14T14:53:36.198538620+00:00  INFO io_engine::subsys::config::opts:opts.rs:267] Overriding NVME_KATO value to '10s'
+[2025-04-14T14:53:36.198558645+00:00  INFO io_engine::subsys::config:mod.rs:233] Applying Mayastor configuration settings
+[2025-04-14T14:53:36.198569478+00:00  INFO io_engine::subsys::config::opts:opts.rs:395] NVMe Bdev options successfully applied
+[2025-04-14T14:53:36.198579130+00:00  INFO io_engine::subsys::config::opts:opts.rs:538] Bdev options successfully applied
+[2025-04-14T14:53:36.198591966+00:00  INFO io_engine::subsys::config::opts:opts.rs:694] Socket options successfully applied
+[2025-04-14T14:53:36.198595533+00:00  INFO io_engine::subsys::config::opts:opts.rs:733] I/O buffer options successfully applied
+[2025-04-14T14:53:36.198599075+00:00  INFO io_engine::subsys::config:mod.rs:239] Config {
+    source: Some(
+        "/var/local/mayastor/io-engine/config.yaml",
+    ),
+    nvmf_tgt_conf: NvmfTgtConfig {
+        name: "mayastor_target",
+        max_namespaces: 2048,
+        crdt: [
+            30,
+            0,
+            0,
+        ],
+        opts_tcp: NvmfTransportOpts {
+            max_queue_depth: 32,
+            max_qpairs_per_ctrl: 32,
+            in_capsule_data_size: 4096,
+            max_io_size: 131072,
+            io_unit_size: 131072,
+            max_aq_depth: 32,
+            num_shared_buf: 2047,
+            buf_cache_size: 64,
+            dif_insert_or_strip: false,
+            abort_timeout_sec: 1,
+            acceptor_poll_rate: 10000,
+            zcopy: true,
+            ack_timeout: 0,
+            data_wr_pool_size: 0,
+        },
+        interface: None,
+        rdma: None,
+        opts_rdma: NvmfTransportOpts {
+            max_queue_depth: 32,
+            max_qpairs_per_ctrl: 32,
+            in_capsule_data_size: 4096,
+            max_io_size: 131072,
+            io_unit_size: 8192,
+            max_aq_depth: 32,
+            num_shared_buf: 2047,
+            buf_cache_size: 64,
+            dif_insert_or_strip: false,
+            abort_timeout_sec: 1,
+            acceptor_poll_rate: 10000,
+            zcopy: true,
+            ack_timeout: 0,
+            data_wr_pool_size: 4095,
+        },
+    },
+    nvme_bdev_opts: NvmeBdevOpts {
+        action_on_timeout: 4,
+        timeout_us: 110000000,
+        timeout_admin_us: 30000000,
+        keep_alive_timeout_ms: 10000,
+        transport_retry_count: 0,
+        arbitration_burst: 0,
+        low_priority_weight: 0,
+        medium_priority_weight: 0,
+        high_priority_weight: 0,
+        nvme_adminq_poll_period_us: 1000,
+        nvme_ioq_poll_period_us: 0,
+        io_queue_requests: 0,
+        delay_cmd_submit: true,
+        bdev_retry_count: 0,
+        transport_ack_timeout: 0,
+        ctrlr_loss_timeout_sec: 0,
+        reconnect_delay_sec: 0,
+        fast_io_fail_timeout_sec: 0,
+        disable_auto_failback: false,
+        generate_uuids: true,
+    },
+    bdev_opts: BdevOpts {
+        bdev_io_pool_size: 65535,
+        bdev_io_cache_size: 512,
+        iobuf_small_cache_size: 128,
+        iobuf_large_cache_size: 16,
+    },
+    nexus_opts: NexusOpts {
+        nvmf_enable: true,
+        nvmf_discovery_enable: true,
+        nvmf_nexus_port: 4421,
+        nvmf_replica_port: 8420,
+    },
+    socket_opts: PosixSocketOpts {
+        recv_buf_size: 2097152,
+        send_buf_size: 2097152,
+        enable_recv_pipe: true,
+        enable_zero_copy_send: true,
+        enable_quickack: true,
+        enable_placement_id: 0,
+        enable_zerocopy_send_server: true,
+        enable_zerocopy_send_client: false,
+        zerocopy_threshold: 0,
+    },
+    iobuf_opts: IoBufOpts {
+        small_pool_count: 8192,
+        large_pool_count: 2048,
+        small_bufsize: 8192,
+        large_bufsize: 135168,
+    },
+    eal_opts: EalOpts {
+        reactor_mask: None,
+        core_list: None,
+        developer_delay: None,
+    },
+}
+[2025-04-14T14:53:36.204530327+00:00  INFO async_nats:lib.rs:996] event: connected
+TELEMETRY: No legacy callbacks, legacy socket not created
+[2025-04-14T14:53:36.339545473+00:00  INFO io_engine::core::mempool:mempool.rs:48] Memory pool 'bdev_io_ctx' with 65535 elements (24 bytes size) successfully created
+[2025-04-14T14:53:36.347886749+00:00  INFO io_engine::core::mempool:mempool.rs:48] Memory pool 'nvme_ctrl_io_ctx' with 65535 elements (72 bytes size) successfully created
+[2025-04-14T14:53:36.347949726+00:00  INFO io_engine::core::env:env.rs:1046] Total number of cores available: 2
+[2025-04-14T14:53:36.375762640+00:00  INFO io_engine::core::reactor:reactor.rs:180] Scheduled SPDK thread 'init_thread' (0x5fa950b701e0) on core #1
+[2025-04-14T14:53:36.375797995+00:00  INFO io_engine::core::reactor:reactor.rs:156] Init thread ID 1
+[2025-04-14T14:53:36.375989112+00:00  INFO io_engine::core::reactor:reactor.rs:299] Starting reactor polling loop [3mcore[0m[2m=[0m2 [3mtid[0m[2m=[0m13
+[2025-04-14T14:53:36.376961370+00:00  INFO io_engine::core::env:env.rs:1081] All cores locked and loaded!
+[2025-04-14T14:53:36.518858202+00:00  INFO io_engine::bdev::nexus::nexus_module:nexus_module.rs:36] Initializing Nexus CAS Module
+[2025-04-14T14:53:36.519009964+00:00  INFO io_engine::core::reactor:reactor.rs:180] Scheduled SPDK thread 'mayastor_nvmf_tcp_pg_core_1' (0x5fa950b71b40) on core #1
+[2025-04-14T14:53:36.519059283+00:00  INFO io_engine::core::reactor:reactor.rs:180] Scheduled SPDK thread 'mayastor_nvmf_tcp_pg_core_2' (0x5fa950b721e0) on core #2
+[2025-04-14T14:53:36.522115877+00:00  INFO io_engine::core::env:env.rs:908] Using 'MY_POD_IP' environment variable for IP address for NVMF target network interface
+[2025-04-14T14:53:36.522259207+00:00  INFO io_engine::subsys::nvmf::target:target.rs:252] nvmf target listening(tcp) on 91.107.230.4:(4421,8420)
+[2025-04-14T14:53:36.522312538+00:00  INFO io_engine::subsys::nvmf::subsystem:subsystem.rs:777] Subsystem start in progress... [3mself[0m[2m=[0mNvmfSubsystem { id: 0, subtype: "Discovery", subnqn: "nqn.2014-08.org.nvmexpress.discovery", sn: "00000000000000000000", mn: "Mayastor NVMe controller", allow_any_host: true, ana_reporting: 0, listeners: Some([Transport ID { trtype: 3, trstring: "TCP", traddr: "91.107.230.4", trsvcid: "8420" }]) }
+[2025-04-14T14:53:36.522360430+00:00  INFO io_engine::subsys::nvmf::subsystem:subsystem.rs:826] Subsystem start completed: Ok [3mself[0m[2m=[0mNvmfSubsystem { id: 0, subtype: "Discovery", subnqn: "nqn.2014-08.org.nvmexpress.discovery", sn: "00000000000000000000", mn: "Mayastor NVMe controller", allow_any_host: true, ana_reporting: 0, listeners: Some([Transport ID { trtype: 3, trstring: "TCP", traddr: "91.107.230.4", trsvcid: "8420" }]) }
+[2025-04-14T14:53:36.522367546+00:00  INFO io_engine::subsys::nvmf::target:target.rs:409] nvmf target accepting new connections and is ready to roll..💃
+[2025-04-14T14:53:36.638823063+00:00  INFO io_engine::core::reactor:reactor.rs:180] Scheduled SPDK thread 'iscsi_poll_group_1' (0x5fa950d580e0) on core #1
+[2025-04-14T14:53:36.639540386+00:00  INFO io_engine::core::reactor:reactor.rs:180] Scheduled SPDK thread 'iscsi_poll_group_2' (0x5fa950d58430) on core #2
+[2025-04-14T14:53:36.639627997+00:00  INFO io_engine::core::env:env.rs:931] RPC server listening at: /var/tmp/mayastor.sock
+[2025-04-14T14:53:36.642065162+00:00  WARN io_engine:io-engine.rs:76] Nexus reset is disabled
+[2025-04-14T14:53:36.642112886+00:00  INFO io_engine:io-engine.rs:117] Async QPair connection feature ('spdk-async-qpair-connect') is enabled
+[2025-04-14T14:53:36.642122911+00:00  INFO io_engine:io-engine.rs:118] Fault injection feature ('fault-injection') is disabled
+[2025-04-14T14:53:36.645345292+00:00  INFO io_engine::persistent_store:persistent_store.rs:144] Connected to etcd on endpoint mayastor-etcd:2379
+[2025-04-14T14:53:36.645454816+00:00  INFO io_engine::persistent_store:persistent_store.rs:120] Persistent store operation timeout: 10s, number of retries: 300
+[2025-04-14T14:53:36.645603894+00:00  INFO io_engine::grpc::server:server.rs:67] [V1] gRPC server configured at address 91.107.230.4:10124
+[2025-04-14T14:53:36.646210410+00:00  INFO io_engine::subsys::registration::registration_grpc:registration_grpc.rs:203] Registering '"ubuntu-mk8s-1"' with grpc server 91.107.230.4:10124 ...

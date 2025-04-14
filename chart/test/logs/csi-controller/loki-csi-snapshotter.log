@@ -1,0 +1,5 @@
+2025-04-14T14:53:42.356808463Z stderr F I0414 14:53:42.356469       1 main.go:109] Version: v6.3.3
+2025-04-14T14:53:45.336685616Z stderr F I0414 14:53:45.336259       1 main.go:189] CSI driver name: "io.openebs.csi-mayastor"
+2025-04-14T14:53:45.336771746Z stderr F I0414 14:53:45.336350       1 common.go:138] Probing CSI driver for readiness
+2025-04-14T14:53:45.341614605Z stderr F I0414 14:53:45.341229       1 main.go:227] Start NewCSISnapshotSideCarController with snapshotter [io.openebs.csi-mayastor] kubeconfig [] csiTimeout [1m0s] csiAddress [/var/lib/csi/sockets/pluginproxy/csi.sock] resyncPeriod [15m0s] snapshotNamePrefix [snapshot] snapshotNameUUIDLength [824635825560]
+2025-04-14T14:53:45.34207375Z stderr F I0414 14:53:45.341786       1 snapshot_controller_base.go:170] Starting CSI snapshotter

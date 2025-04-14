@@ -1,0 +1,258 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  annotations:
+    meta.helm.sh/release-name: mayastor
+    meta.helm.sh/release-namespace: mayastor
+  creationTimestamp: 2025-04-14T14:52:26Z
+  generation: 1
+  labels:
+    app: minio
+    app.kubernetes.io/managed-by: Helm
+    chart: minio-5.4.0
+    heritage: Helm
+    release: mayastor
+  managedFields:
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:meta.helm.sh/release-name: {}
+          f:meta.helm.sh/release-namespace: {}
+        f:labels:
+          .: {}
+          f:app: {}
+          f:app.kubernetes.io/managed-by: {}
+          f:chart: {}
+          f:heritage: {}
+          f:release: {}
+      f:spec:
+        f:persistentVolumeClaimRetentionPolicy:
+          .: {}
+          f:whenDeleted: {}
+          f:whenScaled: {}
+        f:podManagementPolicy: {}
+        f:replicas: {}
+        f:revisionHistoryLimit: {}
+        f:selector: {}
+        f:serviceName: {}
+        f:template:
+          f:metadata:
+            f:annotations:
+              .: {}
+              f:checksum/config: {}
+              f:checksum/secrets: {}
+            f:labels:
+              .: {}
+              f:app: {}
+              f:release: {}
+            f:name: {}
+          f:spec:
+            f:containers:
+              k:{"name":"minio"}:
+                .: {}
+                f:command: {}
+                f:env:
+                  .: {}
+                  k:{"name":"MINIO_PROMETHEUS_AUTH_TYPE"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"MINIO_ROOT_PASSWORD"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:secretKeyRef: {}
+                  k:{"name":"MINIO_ROOT_USER"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:secretKeyRef: {}
+                f:image: {}
+                f:imagePullPolicy: {}
+                f:name: {}
+                f:ports:
+                  .: {}
+                  k:{"containerPort":9000,"protocol":"TCP"}:
+                    .: {}
+                    f:containerPort: {}
+                    f:name: {}
+                    f:protocol: {}
+                  k:{"containerPort":9001,"protocol":"TCP"}:
+                    .: {}
+                    f:containerPort: {}
+                    f:name: {}
+                    f:protocol: {}
+                f:resources:
+                  .: {}
+                  f:requests:
+                    .: {}
+                    f:cpu: {}
+                    f:memory: {}
+                f:securityContext:
+                  .: {}
+                  f:readOnlyRootFilesystem: {}
+                f:terminationMessagePath: {}
+                f:terminationMessagePolicy: {}
+                f:volumeMounts:
+                  .: {}
+                  k:{"mountPath":"/export"}:
+                    .: {}
+                    f:mountPath: {}
+                    f:name: {}
+            f:dnsPolicy: {}
+            f:restartPolicy: {}
+            f:schedulerName: {}
+            f:securityContext:
+              .: {}
+              f:fsGroup: {}
+              f:fsGroupChangePolicy: {}
+              f:runAsGroup: {}
+              f:runAsUser: {}
+            f:serviceAccount: {}
+            f:serviceAccountName: {}
+            f:terminationGracePeriodSeconds: {}
+            f:volumes:
+              .: {}
+              k:{"name":"minio-user"}:
+                .: {}
+                f:name: {}
+                f:secret:
+                  .: {}
+                  f:defaultMode: {}
+                  f:secretName: {}
+        f:updateStrategy:
+          f:type: {}
+        f:volumeClaimTemplates: {}
+    manager: helm
+    operation: Update
+    time: 2025-04-14T14:52:26Z
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:availableReplicas: {}
+        f:collisionCount: {}
+        f:currentReplicas: {}
+        f:currentRevision: {}
+        f:observedGeneration: {}
+        f:readyReplicas: {}
+        f:replicas: {}
+        f:updateRevision: {}
+        f:updatedReplicas: {}
+    manager: kubelite
+    operation: Update
+    subresource: status
+    time: 2025-04-14T14:52:28Z
+  name: mayastor-minio
+  namespace: mayastor
+  resourceVersion: '746396'
+  uid: cf109512-8447-4b9c-89d0-0ee4e250771b
+spec:
+  persistentVolumeClaimRetentionPolicy:
+    whenDeleted: Retain
+    whenScaled: Retain
+  podManagementPolicy: Parallel
+  replicas: 3
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: minio
+      release: mayastor
+  serviceName: mayastor-minio-svc
+  template:
+    metadata:
+      annotations:
+        checksum/config: 62b7a0e29417d7b646de22ece9905dee162d1068b73f7b534975297d9975bcc5
+        checksum/secrets: a8eb2182b8bc1b074c167cd21a2b9fa9ddecb2e2fa998be244b0c0dc63061ba6
+      labels:
+        app: minio
+        release: mayastor
+      name: mayastor-minio
+    spec:
+      containers:
+      - command:
+        - /bin/sh
+        - -ce
+        - /usr/bin/docker-entrypoint.sh minio server http://mayastor-minio-{0...2}.mayastor-minio-svc.mayastor.svc/export -S /etc/minio/certs/ --address :9000 --console-address :9001
+        env:
+        - name: MINIO_ROOT_USER
+          valueFrom:
+            secretKeyRef:
+              key: rootUser
+              name: mayastor-minio
+        - name: MINIO_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: rootPassword
+              name: mayastor-minio
+        - name: MINIO_PROMETHEUS_AUTH_TYPE
+          value: public
+        image: quay.io/minio/minio:RELEASE.2024-12-18T13-15-44Z
+        imagePullPolicy: IfNotPresent
+        name: minio
+        ports:
+        - containerPort: 9000
+          name: http
+          protocol: TCP
+        - containerPort: 9001
+          name: http-console
+          protocol: TCP
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+        securityContext:
+          readOnlyRootFilesystem: false
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /export
+          name: export
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext:
+        fsGroup: 1000
+        fsGroupChangePolicy: OnRootMismatch
+        runAsGroup: 1000
+        runAsUser: 1000
+      serviceAccount: minio-sa
+      serviceAccountName: minio-sa
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: minio-user
+        secret:
+          defaultMode: 420
+          secretName: mayastor-minio
+  updateStrategy:
+    type: RollingUpdate
+  volumeClaimTemplates:
+  - apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+      name: export
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: 5Gi
+      storageClassName: mayastor-loki-localpv
+      volumeMode: Filesystem
+    status:
+      phase: Pending
+status:
+  availableReplicas: 3
+  collisionCount: 0
+  currentReplicas: 3
+  currentRevision: mayastor-minio-7bbc6d7466
+  observedGeneration: 1
+  readyReplicas: 3
+  replicas: 3
+  updateRevision: mayastor-minio-7bbc6d7466
+  updatedReplicas: 3

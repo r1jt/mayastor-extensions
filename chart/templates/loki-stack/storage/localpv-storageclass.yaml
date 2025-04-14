@@ -1,4 +1,4 @@
-{{ if and (index .Values "loki-stack" "localpvScConfig" "enabled") (index .Values "loki-stack" "loki" "persistence" "enabled") (index .Values "loki-stack" "enabled") }}
+{{ if and (index .Values "loki" "localpvScConfig" "enabled") (index .Values "loki" "enabled") }}
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
@@ -7,10 +7,10 @@ metadata:
       - name: StorageType
         value: "hostpath"
       - name: BasePath
-        value: {{ tpl (( index .Values "loki-stack" "localpvScConfig" "basePath" ) | quote ) . }}
+        value: {{ tpl (( index .Values "loki" "localpvScConfig" "basePath" ) | quote ) . }}
     openebs.io/cas-type: local
-  name: {{ (tpl (index .Values "loki-stack" "localpvScConfig" "name") .) | required (print "StorageClass name for loki localpv storage cannot be empty") }}
+  name: {{ (tpl (index .Values "loki" "localpvScConfig" "name") .) | required (print "StorageClass name for loki localpv storage cannot be empty") }}
 provisioner: openebs.io/local
-reclaimPolicy: {{ (index .Values "loki-stack" "localpvScConfig" "reclaimPolicy") }}
-volumeBindingMode: {{ (index .Values "loki-stack" "localpvScConfig" "volumeBindingMode") }}
+reclaimPolicy: {{ (index .Values "loki" "localpvScConfig" "reclaimPolicy") }}
+volumeBindingMode: {{ (index .Values "loki" "localpvScConfig" "volumeBindingMode") }}
 {{ end }}

@@ -317,6 +317,7 @@ impl<'a> LokiPoll<'a> {
         let request = http::Request::builder()
             .method("GET")
             .uri(&request_str)
+            .header("X-Scope-OrgID", "openebs")
             .body(hyper_body::Body::empty())?;
 
         let response = self.client().ready().await?.call(request).await?;

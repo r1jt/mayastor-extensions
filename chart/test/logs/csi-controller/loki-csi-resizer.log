@@ -1,0 +1,5 @@
+2025-04-14T14:53:42.663349821Z stderr F I0414 14:53:42.662895       1 main.go:93] Version : v1.9.3
+2025-04-14T14:53:42.663397524Z stderr F I0414 14:53:42.663103       1 feature_gate.go:249] feature gates: &{map[]}
+2025-04-14T14:53:44.869419258Z stderr F I0414 14:53:44.869126       1 common.go:138] Probing CSI driver for readiness
+2025-04-14T14:53:44.87970583Z stderr F I0414 14:53:44.879305       1 main.go:141] CSI driver name: "io.openebs.csi-mayastor"
+2025-04-14T14:53:44.929704308Z stderr F I0414 14:53:44.929290       1 controller.go:255] Starting external resizer io.openebs.csi-mayastor

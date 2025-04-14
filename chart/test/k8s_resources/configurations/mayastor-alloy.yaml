@@ -1,0 +1,273 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  annotations:
+    deprecated.daemonset.template.generation: '2'
+    meta.helm.sh/release-name: mayastor
+    meta.helm.sh/release-namespace: mayastor
+  creationTimestamp: 2025-04-14T14:52:25Z
+  generation: 2
+  labels:
+    app.kubernetes.io/instance: mayastor
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: alloy
+    app.kubernetes.io/part-of: alloy
+    app.kubernetes.io/version: v1.8.1
+    helm.sh/chart: alloy-1.0.1
+  managedFields:
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:deprecated.daemonset.template.generation: {}
+          f:meta.helm.sh/release-name: {}
+          f:meta.helm.sh/release-namespace: {}
+        f:labels:
+          .: {}
+          f:app.kubernetes.io/instance: {}
+          f:app.kubernetes.io/managed-by: {}
+          f:app.kubernetes.io/name: {}
+          f:app.kubernetes.io/part-of: {}
+          f:app.kubernetes.io/version: {}
+          f:helm.sh/chart: {}
+      f:spec:
+        f:minReadySeconds: {}
+        f:revisionHistoryLimit: {}
+        f:selector: {}
+        f:template:
+          f:metadata:
+            f:annotations:
+              .: {}
+              f:checksum/config: {}
+              f:kubectl.kubernetes.io/default-container: {}
+            f:labels:
+              .: {}
+              f:app.kubernetes.io/instance: {}
+              f:app.kubernetes.io/name: {}
+          f:spec:
+            f:containers:
+              k:{"name":"alloy"}:
+                .: {}
+                f:args: {}
+                f:env:
+                  .: {}
+                  k:{"name":"ALLOY_DEPLOY_MODE"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"HOSTNAME"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:fieldRef: {}
+                f:image: {}
+                f:imagePullPolicy: {}
+                f:name: {}
+                f:ports:
+                  .: {}
+                  k:{"containerPort":12345,"protocol":"TCP"}:
+                    .: {}
+                    f:containerPort: {}
+                    f:name: {}
+                    f:protocol: {}
+                f:readinessProbe:
+                  .: {}
+                  f:failureThreshold: {}
+                  f:httpGet:
+                    .: {}
+                    f:path: {}
+                    f:port: {}
+                    f:scheme: {}
+                  f:initialDelaySeconds: {}
+                  f:periodSeconds: {}
+                  f:successThreshold: {}
+                  f:timeoutSeconds: {}
+                f:resources: {}
+                f:terminationMessagePath: {}
+                f:terminationMessagePolicy: {}
+                f:volumeMounts:
+                  .: {}
+                  k:{"mountPath":"/etc/alloy"}:
+                    .: {}
+                    f:mountPath: {}
+                    f:name: {}
+                  k:{"mountPath":"/var/log"}:
+                    .: {}
+                    f:mountPath: {}
+                    f:name: {}
+                    f:readOnly: {}
+              k:{"name":"config-reloader"}:
+                .: {}
+                f:args: {}
+                f:image: {}
+                f:imagePullPolicy: {}
+                f:name: {}
+                f:resources:
+                  .: {}
+                  f:requests:
+                    .: {}
+                    f:cpu: {}
+                    f:memory: {}
+                f:terminationMessagePath: {}
+                f:terminationMessagePolicy: {}
+                f:volumeMounts:
+                  .: {}
+                  k:{"mountPath":"/etc/alloy"}:
+                    .: {}
+                    f:mountPath: {}
+                    f:name: {}
+            f:dnsPolicy: {}
+            f:restartPolicy: {}
+            f:schedulerName: {}
+            f:securityContext: {}
+            f:serviceAccount: {}
+            f:serviceAccountName: {}
+            f:terminationGracePeriodSeconds: {}
+            f:volumes:
+              .: {}
+              k:{"name":"config"}:
+                .: {}
+                f:configMap:
+                  .: {}
+                  f:defaultMode: {}
+                  f:name: {}
+                f:name: {}
+              k:{"name":"varlog"}:
+                .: {}
+                f:hostPath:
+                  .: {}
+                  f:path: {}
+                  f:type: {}
+                f:name: {}
+        f:updateStrategy:
+          f:rollingUpdate:
+            .: {}
+            f:maxSurge: {}
+            f:maxUnavailable: {}
+          f:type: {}
+    manager: helm
+    operation: Update
+    time: 2025-04-14T14:52:59Z
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:currentNumberScheduled: {}
+        f:desiredNumberScheduled: {}
+        f:numberAvailable: {}
+        f:numberReady: {}
+        f:observedGeneration: {}
+        f:updatedNumberScheduled: {}
+    manager: kubelite
+    operation: Update
+    subresource: status
+    time: 2025-04-14T14:53:22Z
+  name: mayastor-alloy
+  namespace: mayastor
+  resourceVersion: '747146'
+  uid: 39254418-1a87-4126-bb72-0e333ffb1daa
+spec:
+  minReadySeconds: 10
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: mayastor
+      app.kubernetes.io/name: alloy
+  template:
+    metadata:
+      annotations:
+        checksum/config: 8b049b42dff91c50c4005eef5b6b3d9f75a5337d8300654d00de9bb2ee1fd20
+        kubectl.kubernetes.io/default-container: alloy
+      labels:
+        app.kubernetes.io/instance: mayastor
+        app.kubernetes.io/name: alloy
+    spec:
+      containers:
+      - args:
+        - run
+        - /etc/alloy/config.alloy
+        - --storage.path=/tmp/alloy
+        - --server.http.listen-addr=0.0.0.0:12345
+        - --server.http.ui-path-prefix=/
+        - --stability.level=generally-available
+        env:
+        - name: ALLOY_DEPLOY_MODE
+          value: helm
+        - name: HOSTNAME
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: spec.nodeName
+        image: docker.io/grafana/alloy:v1.8.1
+        imagePullPolicy: IfNotPresent
+        name: alloy
+        ports:
+        - containerPort: 12345
+          name: http-metrics
+          protocol: TCP
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /-/ready
+            port: 12345
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /etc/alloy
+          name: config
+        - mountPath: /var/log
+          name: varlog
+          readOnly: true
+      - args:
+        - --watched-dir=/etc/alloy
+        - --reload-url=http://localhost:12345/-/reload
+        image: quay.io/prometheus-operator/prometheus-config-reloader:v0.81.0
+        imagePullPolicy: IfNotPresent
+        name: config-reloader
+        resources:
+          requests:
+            cpu: 10m
+            memory: 50Mi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /etc/alloy
+          name: config
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      serviceAccount: mayastor-alloy
+      serviceAccountName: mayastor-alloy
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - configMap:
+          defaultMode: 420
+          name: mayastor-alloy
+        name: config
+      - hostPath:
+          path: /var/log
+          type: ''
+        name: varlog
+  updateStrategy:
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+    type: RollingUpdate
+status:
+  currentNumberScheduled: 3
+  desiredNumberScheduled: 3
+  numberAvailable: 3
+  numberMisscheduled: 0
+  numberReady: 3
+  observedGeneration: 2
+  updatedNumberScheduled: 3

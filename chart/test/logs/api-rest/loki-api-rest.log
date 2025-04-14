@@ -1,0 +1,1403 @@
+2025-04-14T14:53:36.990755485Z stdout F   [2m2025-04-14T14:53:36.990481Z[0m [32m INFO[0m [1;32mactix_server::builder[0m[32m: [32mstarting 8 workers[0m
+2025-04-14T14:53:36.990794049Z stdout F   [2m2025-04-14T14:53:36.990523Z[0m [32m INFO[0m [1;32mactix_server::server[0m[32m: [32mActix runtime found; starting in Actix runtime[0m
+2025-04-14T14:53:36.990813009Z stdout F   [2m2025-04-14T14:53:36.990555Z[0m [32m INFO[0m [1;32mactix_server::server[0m[32m: [32mstarting service: "actix-web-service-[::]:8080", workers: 8, listening on: [::]:8080[0m
+2025-04-14T14:53:36.990821177Z stdout F   [2m2025-04-14T14:53:36.990576Z[0m [32m INFO[0m [1;32mactix_server::server[0m[32m: [32mstarting service: "actix-web-service-[::]:8081", workers: 8, listening on: [::]:8081[0m
+2025-04-14T14:53:41.282601044Z stdout F   [2m2025-04-14T14:53:41.282312Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000343[0m
+2025-04-14T14:53:44.532317178Z stdout F   [2m2025-04-14T14:53:44.532060Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /v0/nodes HTTP/1.1" 200 763 "-" "-" 0.002471[0m
+2025-04-14T14:53:44.873848809Z stdout F   [2m2025-04-14T14:53:44.873597Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /v0/nodes HTTP/1.1" 200 763 "-" "-" 0.001927[0m
+2025-04-14T14:53:45.033965453Z stdout F   [2m2025-04-14T14:53:45.033655Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /v0/nodes HTTP/1.1" 200 763 "-" "-" 0.001624[0m
+2025-04-14T14:53:45.15018952Z stdout F   [2m2025-04-14T14:53:45.149901Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /v0/nodes HTTP/1.1" 200 763 "-" "-" 0.001869[0m
+2025-04-14T14:53:45.339177362Z stdout F   [2m2025-04-14T14:53:45.338858Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /v0/nodes HTTP/1.1" 200 763 "-" "-" 0.001661[0m
+2025-04-14T14:53:56.21541535Z stdout F   [2m2025-04-14T14:53:56.215138Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000156[0m
+2025-04-14T14:53:57.459435121Z stdout F   [2m2025-04-14T14:53:57.459058Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.011029[0m
+2025-04-14T14:53:57.574147522Z stdout F   [2m2025-04-14T14:53:57.573822Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.006862[0m
+2025-04-14T14:53:57.653512242Z stdout F   [2m2025-04-14T14:53:57.653286Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.007540[0m
+2025-04-14T14:53:57.849565662Z stdout F   [2m2025-04-14T14:53:57.849232Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001939[0m
+2025-04-14T14:54:17.847620136Z stdout F   [2m2025-04-14T14:54:17.847312Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000264[0m
+2025-04-14T14:54:26.216151134Z stdout F   [2m2025-04-14T14:54:26.215906Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000188[0m
+2025-04-14T14:54:37.848396376Z stdout F   [2m2025-04-14T14:54:37.848117Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001748[0m
+2025-04-14T14:54:56.216245262Z stdout F   [2m2025-04-14T14:54:56.215810Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000242[0m
+2025-04-14T14:54:57.84759539Z stdout F   [2m2025-04-14T14:54:57.847121Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000184[0m
+2025-04-14T14:55:17.84882218Z stdout F   [2m2025-04-14T14:55:17.848441Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001428[0m
+2025-04-14T14:55:26.215035501Z stdout F   [2m2025-04-14T14:55:26.214770Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000142[0m
+2025-04-14T14:55:37.847474011Z stdout F   [2m2025-04-14T14:55:37.847193Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000199[0m
+2025-04-14T14:55:56.215567031Z stdout F   [2m2025-04-14T14:55:56.215223Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000237[0m
+2025-04-14T14:55:57.849112644Z stdout F   [2m2025-04-14T14:55:57.848767Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001615[0m
+2025-04-14T14:56:17.847749914Z stdout F   [2m2025-04-14T14:56:17.847371Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000109[0m
+2025-04-14T14:56:26.216203743Z stdout F   [2m2025-04-14T14:56:26.215841Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000186[0m
+2025-04-14T14:56:37.849362763Z stdout F   [2m2025-04-14T14:56:37.848989Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001818[0m
+2025-04-14T14:56:56.215516533Z stdout F   [2m2025-04-14T14:56:56.215195Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000142[0m
+2025-04-14T14:56:56.520392695Z stdout F   [2m2025-04-14T14:56:56.520022Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/volumes?max_entries=200&starting_token=0 HTTP/1.1" 200 14 "-" "-" 0.006150[0m
+2025-04-14T14:56:56.535970821Z stdout F   [2m2025-04-14T14:56:56.535525Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/volumes/snapshots?max_entries=200&starting_token=0 HTTP/1.1" 200 14 "-" "-" 0.003718[0m
+2025-04-14T14:56:56.582715578Z stdout F   [2m2025-04-14T14:56:56.582215Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/pools HTTP/1.1" 200 2 "-" "-" 0.037175[0m
+2025-04-14T14:56:56.595149486Z stdout F   [2m2025-04-14T14:56:56.594801Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes HTTP/1.1" 200 763 "-" "-" 0.001967[0m
+2025-04-14T14:56:56.658389143Z stdout F   [2m2025-04-14T14:56:56.657939Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes/ubuntu-mk8s-2/block_devices?all=true HTTP/1.1" 200 5541 "-" "-" 0.054816[0m
+2025-04-14T14:56:56.72321707Z stdout F   [2m2025-04-14T14:56:56.722826Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes/ubuntu-mk8s-1/block_devices?all=true HTTP/1.1" 200 5541 "-" "-" 0.051790[0m
+2025-04-14T14:56:57.847741471Z stdout F   [2m2025-04-14T14:56:57.847301Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000247[0m
+2025-04-14T14:57:17.848722055Z stdout F   [2m2025-04-14T14:57:17.848300Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001467[0m
+2025-04-14T14:57:26.215426192Z stdout F   [2m2025-04-14T14:57:26.215000Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000129[0m
+2025-04-14T14:57:37.847590535Z stdout F   [2m2025-04-14T14:57:37.847187Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000206[0m
+2025-04-14T14:57:56.216613373Z stdout F   [2m2025-04-14T14:57:56.216030Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000581[0m
+2025-04-14T14:57:57.849655552Z stdout F   [2m2025-04-14T14:57:57.849301Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002740[0m
+2025-04-14T14:58:17.847948965Z stdout F   [2m2025-04-14T14:58:17.847646Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000441[0m
+2025-04-14T14:58:26.216269324Z stdout F   [2m2025-04-14T14:58:26.216032Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000341[0m
+2025-04-14T14:58:37.849873148Z stdout F   [2m2025-04-14T14:58:37.849470Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002110[0m
+2025-04-14T14:58:56.217498417Z stdout F   [2m2025-04-14T14:58:56.217024Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.001183[0m
+2025-04-14T14:58:57.470677161Z stdout F   [2m2025-04-14T14:58:57.470250Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.003502[0m
+2025-04-14T14:58:57.583692642Z stdout F   [2m2025-04-14T14:58:57.583278Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.002653[0m
+2025-04-14T14:58:57.666201317Z stdout F   [2m2025-04-14T14:58:57.665878Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002362[0m
+2025-04-14T14:58:57.848244408Z stdout F   [2m2025-04-14T14:58:57.847925Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000308[0m
+2025-04-14T14:59:00.191211025Z stdout F   [2m2025-04-14T14:59:00.190887Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/volumes?max_entries=200&starting_token=0 HTTP/1.1" 200 14 "-" "-" 0.005905[0m
+2025-04-14T14:59:00.201988816Z stdout F   [2m2025-04-14T14:59:00.201729Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/volumes/snapshots?max_entries=200&starting_token=0 HTTP/1.1" 200 14 "-" "-" 0.002971[0m
+2025-04-14T14:59:00.212605683Z stdout F   [2m2025-04-14T14:59:00.212311Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/pools HTTP/1.1" 200 2 "-" "-" 0.002745[0m
+2025-04-14T14:59:00.281403342Z stdout F   [2m2025-04-14T14:59:00.281133Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes HTTP/1.1" 200 763 "-" "-" 0.059778[0m
+2025-04-14T14:59:00.338831437Z stdout F   [2m2025-04-14T14:59:00.338505Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes/ubuntu-mk8s-1/block_devices?all=true HTTP/1.1" 200 5541 "-" "-" 0.047128[0m
+2025-04-14T14:59:00.42876385Z stdout F   [2m2025-04-14T14:59:00.428469Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes/ubuntu-mk8s-2/block_devices?all=true HTTP/1.1" 200 5541 "-" "-" 0.077818[0m
+2025-04-14T14:59:17.84882311Z stdout F   [2m2025-04-14T14:59:17.848344Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001804[0m
+2025-04-14T14:59:26.215244672Z stdout F   [2m2025-04-14T14:59:26.215031Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000204[0m
+2025-04-14T14:59:37.848300683Z stdout F   [2m2025-04-14T14:59:37.847863Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000271[0m
+2025-04-14T14:59:56.215600557Z stdout F   [2m2025-04-14T14:59:56.215213Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000227[0m
+2025-04-14T14:59:57.849984389Z stdout F   [2m2025-04-14T14:59:57.849606Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002482[0m
+2025-04-14T15:00:17.847420557Z stdout F   [2m2025-04-14T15:00:17.847132Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000181[0m
+2025-04-14T15:00:26.215195874Z stdout F   [2m2025-04-14T15:00:26.214906Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000170[0m
+2025-04-14T15:00:37.848128588Z stdout F   [2m2025-04-14T15:00:37.847810Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001225[0m
+2025-04-14T15:00:56.216141763Z stdout F   [2m2025-04-14T15:00:56.215651Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000235[0m
+2025-04-14T15:00:57.850247861Z stdout F   [2m2025-04-14T15:00:57.849937Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002141[0m
+2025-04-14T15:01:17.847597299Z stdout F   [2m2025-04-14T15:01:17.847156Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000273[0m
+2025-04-14T15:01:26.217664532Z stdout F   [2m2025-04-14T15:01:26.217044Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000791[0m
+2025-04-14T15:01:37.849892921Z stdout F   [2m2025-04-14T15:01:37.849504Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002456[0m
+2025-04-14T15:01:56.216326773Z stdout F   [2m2025-04-14T15:01:56.215972Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000292[0m
+2025-04-14T15:01:57.848108249Z stdout F   [2m2025-04-14T15:01:57.847638Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000199[0m
+2025-04-14T15:02:17.849519382Z stdout F   [2m2025-04-14T15:02:17.849202Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001757[0m
+2025-04-14T15:02:26.216880723Z stdout F   [2m2025-04-14T15:02:26.216444Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.001000[0m
+2025-04-14T15:02:37.848167313Z stdout F   [2m2025-04-14T15:02:37.847793Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000628[0m
+2025-04-14T15:02:56.215617853Z stdout F   [2m2025-04-14T15:02:56.215242Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000345[0m
+2025-04-14T15:02:57.849727638Z stdout F   [2m2025-04-14T15:02:57.849131Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002151[0m
+2025-04-14T15:03:17.847193327Z stdout F   [2m2025-04-14T15:03:17.846778Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000429[0m
+2025-04-14T15:03:26.215900184Z stdout F   [2m2025-04-14T15:03:26.215522Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000330[0m
+2025-04-14T15:03:37.848841381Z stdout F   [2m2025-04-14T15:03:37.848521Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001605[0m
+2025-04-14T15:03:56.215569658Z stdout F   [2m2025-04-14T15:03:56.215241Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000198[0m
+2025-04-14T15:03:57.479949938Z stdout F   [2m2025-04-14T15:03:57.479606Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.003180[0m
+2025-04-14T15:03:57.594100152Z stdout F   [2m2025-04-14T15:03:57.593798Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.002981[0m
+2025-04-14T15:03:57.673994333Z stdout F   [2m2025-04-14T15:03:57.673729Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.001606[0m
+2025-04-14T15:03:57.847648361Z stdout F   [2m2025-04-14T15:03:57.847264Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000196[0m
+2025-04-14T15:04:17.849109019Z stdout F   [2m2025-04-14T15:04:17.848814Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001529[0m
+2025-04-14T15:04:26.216039911Z stdout F   [2m2025-04-14T15:04:26.215689Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000499[0m
+2025-04-14T15:04:37.847049944Z stdout F   [2m2025-04-14T15:04:37.846771Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000215[0m
+2025-04-14T15:04:56.215955153Z stdout F   [2m2025-04-14T15:04:56.215699Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000266[0m
+2025-04-14T15:04:57.850400434Z stdout F   [2m2025-04-14T15:04:57.849977Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002078[0m
+2025-04-14T15:05:17.081037772Z stdout F   [2m2025-04-14T15:05:17.080803Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/volumes?max_entries=200&starting_token=0 HTTP/1.1" 200 14 "-" "-" 0.002512[0m
+2025-04-14T15:05:17.092446541Z stdout F   [2m2025-04-14T15:05:17.092195Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/volumes/snapshots?max_entries=200&starting_token=0 HTTP/1.1" 200 14 "-" "-" 0.002332[0m
+2025-04-14T15:05:17.102180744Z stdout F   [2m2025-04-14T15:05:17.101949Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/pools HTTP/1.1" 200 2 "-" "-" 0.001731[0m
+2025-04-14T15:05:17.113125803Z stdout F   [2m2025-04-14T15:05:17.112851Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes HTTP/1.1" 200 763 "-" "-" 0.002266[0m
+2025-04-14T15:05:17.16992623Z stdout F   [2m2025-04-14T15:05:17.169679Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes/ubuntu-mk8s-1/block_devices?all=true HTTP/1.1" 200 5541 "-" "-" 0.049161[0m
+2025-04-14T15:05:17.245221028Z stdout F   [2m2025-04-14T15:05:17.244952Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes/ubuntu-mk8s-2/block_devices?all=true HTTP/1.1" 200 5541 "-" "-" 0.064280[0m
+2025-04-14T15:05:17.847590437Z stdout F   [2m2025-04-14T15:05:17.847275Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000211[0m
+2025-04-14T15:05:26.215143828Z stdout F   [2m2025-04-14T15:05:26.214907Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000137[0m
+2025-04-14T15:05:37.848364267Z stdout F   [2m2025-04-14T15:05:37.848125Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001180[0m
+2025-04-14T15:05:56.215923839Z stdout F   [2m2025-04-14T15:05:56.215641Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000264[0m
+2025-04-14T15:05:57.848436114Z stdout F   [2m2025-04-14T15:05:57.847933Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000460[0m
+2025-04-14T15:06:17.849177568Z stdout F   [2m2025-04-14T15:06:17.848823Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002061[0m
+2025-04-14T15:06:26.215576164Z stdout F   [2m2025-04-14T15:06:26.215213Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000222[0m
+2025-04-14T15:06:37.847326698Z stdout F   [2m2025-04-14T15:06:37.847000Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000139[0m
+2025-04-14T15:06:56.215810546Z stdout F   [2m2025-04-14T15:06:56.215437Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000171[0m
+2025-04-14T15:06:57.849201284Z stdout F   [2m2025-04-14T15:06:57.848959Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001905[0m
+2025-04-14T15:07:17.847235402Z stdout F   [2m2025-04-14T15:07:17.846820Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000362[0m
+2025-04-14T15:07:26.215338166Z stdout F   [2m2025-04-14T15:07:26.215063Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000172[0m
+2025-04-14T15:07:37.850152876Z stdout F   [2m2025-04-14T15:07:37.849733Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002326[0m
+2025-04-14T15:07:56.215461577Z stdout F   [2m2025-04-14T15:07:56.215191Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000167[0m
+2025-04-14T15:07:57.846982318Z stdout F   [2m2025-04-14T15:07:57.846771Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000331[0m
+2025-04-14T15:08:17.847919438Z stdout F   [2m2025-04-14T15:08:17.847641Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001182[0m
+2025-04-14T15:08:26.215292414Z stdout F   [2m2025-04-14T15:08:26.214985Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000148[0m
+2025-04-14T15:08:37.847065142Z stdout F   [2m2025-04-14T15:08:37.846690Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000393[0m
+2025-04-14T15:08:56.216197529Z stdout F   [2m2025-04-14T15:08:56.215873Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000236[0m
+2025-04-14T15:08:57.489683588Z stdout F   [2m2025-04-14T15:08:57.488909Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.001987[0m
+2025-04-14T15:08:57.601644339Z stdout F   [2m2025-04-14T15:08:57.601191Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.002058[0m
+2025-04-14T15:08:57.685918666Z stdout F   [2m2025-04-14T15:08:57.685400Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002119[0m
+2025-04-14T15:08:57.848734195Z stdout F   [2m2025-04-14T15:08:57.848417Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001681[0m
+2025-04-14T15:09:17.847569368Z stdout F   [2m2025-04-14T15:09:17.847273Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000145[0m
+2025-04-14T15:09:26.216141071Z stdout F   [2m2025-04-14T15:09:26.215844Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000228[0m
+2025-04-14T15:09:37.850440004Z stdout F   [2m2025-04-14T15:09:37.850123Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003133[0m
+2025-04-14T15:09:56.217019151Z stdout F   [2m2025-04-14T15:09:56.216512Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000623[0m
+2025-04-14T15:09:57.848632585Z stdout F   [2m2025-04-14T15:09:57.847916Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000602[0m
+2025-04-14T15:10:17.854967178Z stdout F   [2m2025-04-14T15:10:17.854530Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.005766[0m
+2025-04-14T15:10:26.216407834Z stdout F   [2m2025-04-14T15:10:26.216101Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000388[0m
+2025-04-14T15:10:37.847508304Z stdout F   [2m2025-04-14T15:10:37.847206Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000306[0m
+2025-04-14T15:10:56.216429409Z stdout F   [2m2025-04-14T15:10:56.216176Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000484[0m
+2025-04-14T15:10:57.849821762Z stdout F   [2m2025-04-14T15:10:57.849413Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002414[0m
+2025-04-14T15:11:17.847435182Z stdout F   [2m2025-04-14T15:11:17.847070Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000256[0m
+2025-04-14T15:11:26.215520846Z stdout F   [2m2025-04-14T15:11:26.215014Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000302[0m
+2025-04-14T15:11:37.849041942Z stdout F   [2m2025-04-14T15:11:37.848365Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001717[0m
+2025-04-14T15:11:56.215127171Z stdout F   [2m2025-04-14T15:11:56.214815Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000164[0m
+2025-04-14T15:11:57.848197918Z stdout F   [2m2025-04-14T15:11:57.847828Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000628[0m
+2025-04-14T15:12:17.849930567Z stdout F   [2m2025-04-14T15:12:17.849610Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001778[0m
+2025-04-14T15:12:26.217845295Z stdout F   [2m2025-04-14T15:12:26.216707Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000497[0m
+2025-04-14T15:12:37.847445799Z stdout F   [2m2025-04-14T15:12:37.847145Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000241[0m
+2025-04-14T15:12:56.215665993Z stdout F   [2m2025-04-14T15:12:56.215304Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000151[0m
+2025-04-14T15:12:57.849450997Z stdout F   [2m2025-04-14T15:12:57.848957Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002118[0m
+2025-04-14T15:13:17.847288881Z stdout F   [2m2025-04-14T15:13:17.846950Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000127[0m
+2025-04-14T15:13:26.214756651Z stdout F   [2m2025-04-14T15:13:26.214511Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000144[0m
+2025-04-14T15:13:37.848312171Z stdout F   [2m2025-04-14T15:13:37.847984Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001157[0m
+2025-04-14T15:13:56.215343877Z stdout F   [2m2025-04-14T15:13:56.215034Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000218[0m
+2025-04-14T15:13:57.570266017Z stdout F   [2m2025-04-14T15:13:57.570010Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.002671[0m
+2025-04-14T15:13:57.680865824Z stdout F   [2m2025-04-14T15:13:57.680496Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.001685[0m
+2025-04-14T15:13:57.697096122Z stdout F   [2m2025-04-14T15:13:57.696621Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002292[0m
+2025-04-14T15:13:57.848143751Z stdout F   [2m2025-04-14T15:13:57.847805Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000299[0m
+2025-04-14T15:14:17.849230415Z stdout F   [2m2025-04-14T15:14:17.848918Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001419[0m
+2025-04-14T15:14:26.215174263Z stdout F   [2m2025-04-14T15:14:26.214833Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000141[0m
+2025-04-14T15:14:37.847762242Z stdout F   [2m2025-04-14T15:14:37.847285Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000285[0m
+2025-04-14T15:14:56.214926103Z stdout F   [2m2025-04-14T15:14:56.214576Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000253[0m
+2025-04-14T15:14:57.850395096Z stdout F   [2m2025-04-14T15:14:57.849894Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002668[0m
+2025-04-14T15:15:17.848335595Z stdout F   [2m2025-04-14T15:15:17.847983Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000307[0m
+2025-04-14T15:15:26.215569138Z stdout F   [2m2025-04-14T15:15:26.215199Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000209[0m
+2025-04-14T15:15:37.84933564Z stdout F   [2m2025-04-14T15:15:37.848937Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001878[0m
+2025-04-14T15:15:56.215760188Z stdout F   [2m2025-04-14T15:15:56.215388Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000184[0m
+2025-04-14T15:15:57.847579811Z stdout F   [2m2025-04-14T15:15:57.847202Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000199[0m
+2025-04-14T15:16:17.849305558Z stdout F   [2m2025-04-14T15:16:17.848823Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001567[0m
+2025-04-14T15:16:26.21543927Z stdout F   [2m2025-04-14T15:16:26.215085Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000173[0m
+2025-04-14T15:16:37.847877488Z stdout F   [2m2025-04-14T15:16:37.847486Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000130[0m
+2025-04-14T15:16:56.215485471Z stdout F   [2m2025-04-14T15:16:56.215165Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000148[0m
+2025-04-14T15:16:57.848973779Z stdout F   [2m2025-04-14T15:16:57.848514Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001685[0m
+2025-04-14T15:17:17.846852598Z stdout F   [2m2025-04-14T15:17:17.846586Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000216[0m
+2025-04-14T15:17:26.214998411Z stdout F   [2m2025-04-14T15:17:26.214774Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000148[0m
+2025-04-14T15:17:37.850633742Z stdout F   [2m2025-04-14T15:17:37.850317Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003315[0m
+2025-04-14T15:17:56.216567617Z stdout F   [2m2025-04-14T15:17:56.216095Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000307[0m
+2025-04-14T15:17:57.84904664Z stdout F   [2m2025-04-14T15:17:57.848418Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000547[0m
+2025-04-14T15:18:17.849038982Z stdout F   [2m2025-04-14T15:18:17.848757Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001510[0m
+2025-04-14T15:18:26.216056771Z stdout F   [2m2025-04-14T15:18:26.215783Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000234[0m
+2025-04-14T15:18:37.852985528Z stdout F   [2m2025-04-14T15:18:37.852371Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.004148[0m
+2025-04-14T15:18:56.215395489Z stdout F   [2m2025-04-14T15:18:56.215142Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000271[0m
+2025-04-14T15:18:57.57952879Z stdout F   [2m2025-04-14T15:18:57.579255Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.003437[0m
+2025-04-14T15:18:57.689694297Z stdout F   [2m2025-04-14T15:18:57.689333Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.001596[0m
+2025-04-14T15:18:57.707528636Z stdout F   [2m2025-04-14T15:18:57.707241Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002078[0m
+2025-04-14T15:18:57.847139264Z stdout F   [2m2025-04-14T15:18:57.846745Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000220[0m
+2025-04-14T15:19:17.849757228Z stdout F   [2m2025-04-14T15:19:17.849249Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001846[0m
+2025-04-14T15:19:26.222770569Z stdout F   [2m2025-04-14T15:19:26.217170Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000317[0m
+2025-04-14T15:19:37.848079269Z stdout F   [2m2025-04-14T15:19:37.847739Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000347[0m
+2025-04-14T15:19:56.215735924Z stdout F   [2m2025-04-14T15:19:56.215260Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000285[0m
+2025-04-14T15:19:57.850042761Z stdout F   [2m2025-04-14T15:19:57.849407Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002164[0m
+2025-04-14T15:20:17.847839313Z stdout F   [2m2025-04-14T15:20:17.847485Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000178[0m
+2025-04-14T15:20:26.215684738Z stdout F   [2m2025-04-14T15:20:26.215390Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000289[0m
+2025-04-14T15:20:37.84913611Z stdout F   [2m2025-04-14T15:20:37.848703Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002011[0m
+2025-04-14T15:20:56.215561Z stdout F   [2m2025-04-14T15:20:56.215227Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000177[0m
+2025-04-14T15:20:57.847212591Z stdout F   [2m2025-04-14T15:20:57.846981Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000229[0m
+2025-04-14T15:21:17.84906372Z stdout F   [2m2025-04-14T15:21:17.848629Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001506[0m
+2025-04-14T15:21:26.215995731Z stdout F   [2m2025-04-14T15:21:26.215635Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000203[0m
+2025-04-14T15:21:37.84826443Z stdout F   [2m2025-04-14T15:21:37.847962Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000208[0m
+2025-04-14T15:21:56.214988778Z stdout F   [2m2025-04-14T15:21:56.214671Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000254[0m
+2025-04-14T15:21:57.84944889Z stdout F   [2m2025-04-14T15:21:57.849049Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002073[0m
+2025-04-14T15:22:17.847670678Z stdout F   [2m2025-04-14T15:22:17.847091Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000155[0m
+2025-04-14T15:22:26.215580909Z stdout F   [2m2025-04-14T15:22:26.215294Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000183[0m
+2025-04-14T15:22:37.849197621Z stdout F   [2m2025-04-14T15:22:37.848815Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001736[0m
+2025-04-14T15:22:56.215502141Z stdout F   [2m2025-04-14T15:22:56.215107Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000198[0m
+2025-04-14T15:22:57.847128802Z stdout F   [2m2025-04-14T15:22:57.846784Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000193[0m
+2025-04-14T15:23:17.848985216Z stdout F   [2m2025-04-14T15:23:17.848511Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002031[0m
+2025-04-14T15:23:26.215898202Z stdout F   [2m2025-04-14T15:23:26.215620Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000251[0m
+2025-04-14T15:23:37.847369512Z stdout F   [2m2025-04-14T15:23:37.846956Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000166[0m
+2025-04-14T15:23:56.216242011Z stdout F   [2m2025-04-14T15:23:56.215889Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000176[0m
+2025-04-14T15:23:57.587127447Z stdout F   [2m2025-04-14T15:23:57.586855Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.002517[0m
+2025-04-14T15:23:57.698658482Z stdout F   [2m2025-04-14T15:23:57.698234Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.002324[0m
+2025-04-14T15:23:57.714396643Z stdout F   [2m2025-04-14T15:23:57.714070Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002127[0m
+2025-04-14T15:23:57.849511013Z stdout F   [2m2025-04-14T15:23:57.849207Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001477[0m
+2025-04-14T15:24:17.848270503Z stdout F   [2m2025-04-14T15:24:17.847966Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000583[0m
+2025-04-14T15:24:26.215309804Z stdout F   [2m2025-04-14T15:24:26.215022Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000150[0m
+2025-04-14T15:24:37.850617242Z stdout F   [2m2025-04-14T15:24:37.850087Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003055[0m
+2025-04-14T15:24:56.216325343Z stdout F   [2m2025-04-14T15:24:56.215985Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000479[0m
+2025-04-14T15:24:57.848438203Z stdout F   [2m2025-04-14T15:24:57.847911Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000494[0m
+2025-04-14T15:25:17.852341655Z stdout F   [2m2025-04-14T15:25:17.851993Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003612[0m
+2025-04-14T15:25:26.216414634Z stdout F   [2m2025-04-14T15:25:26.216183Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000383[0m
+2025-04-14T15:25:37.84764908Z stdout F   [2m2025-04-14T15:25:37.847302Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000441[0m
+2025-04-14T15:25:56.215177022Z stdout F   [2m2025-04-14T15:25:56.214860Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000208[0m
+2025-04-14T15:25:57.850415917Z stdout F   [2m2025-04-14T15:25:57.849979Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002474[0m
+2025-04-14T15:26:17.848173509Z stdout F   [2m2025-04-14T15:26:17.847833Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000164[0m
+2025-04-14T15:26:26.215244181Z stdout F   [2m2025-04-14T15:26:26.214870Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000198[0m
+2025-04-14T15:26:37.850155418Z stdout F   [2m2025-04-14T15:26:37.849694Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002204[0m
+2025-04-14T15:26:56.216132632Z stdout F   [2m2025-04-14T15:26:56.215733Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000343[0m
+2025-04-14T15:26:57.847295457Z stdout F   [2m2025-04-14T15:26:57.846985Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000336[0m
+2025-04-14T15:27:17.848308903Z stdout F   [2m2025-04-14T15:27:17.848068Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001468[0m
+2025-04-14T15:27:26.215502502Z stdout F   [2m2025-04-14T15:27:26.215276Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000255[0m
+2025-04-14T15:27:37.847758046Z stdout F   [2m2025-04-14T15:27:37.847480Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000163[0m
+2025-04-14T15:27:56.21563831Z stdout F   [2m2025-04-14T15:27:56.215417Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000171[0m
+2025-04-14T15:27:57.849663389Z stdout F   [2m2025-04-14T15:27:57.849228Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001922[0m
+2025-04-14T15:28:17.847065841Z stdout F   [2m2025-04-14T15:28:17.846846Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000161[0m
+2025-04-14T15:28:26.215375343Z stdout F   [2m2025-04-14T15:28:26.215112Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000174[0m
+2025-04-14T15:28:37.848636405Z stdout F   [2m2025-04-14T15:28:37.848315Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001579[0m
+2025-04-14T15:28:56.215506171Z stdout F   [2m2025-04-14T15:28:56.214983Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000166[0m
+2025-04-14T15:28:57.598757528Z stdout F   [2m2025-04-14T15:28:57.598363Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.003730[0m
+2025-04-14T15:28:57.709435478Z stdout F   [2m2025-04-14T15:28:57.709118Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.001850[0m
+2025-04-14T15:28:57.722421021Z stdout F   [2m2025-04-14T15:28:57.722051Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.001994[0m
+2025-04-14T15:28:57.847293744Z stdout F   [2m2025-04-14T15:28:57.847007Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000171[0m
+2025-04-14T15:29:17.848986907Z stdout F   [2m2025-04-14T15:29:17.848704Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001924[0m
+2025-04-14T15:29:26.215224551Z stdout F   [2m2025-04-14T15:29:26.214936Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000255[0m
+2025-04-14T15:29:37.847697673Z stdout F   [2m2025-04-14T15:29:37.847340Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000341[0m
+2025-04-14T15:29:56.216104303Z stdout F   [2m2025-04-14T15:29:56.215763Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000167[0m
+2025-04-14T15:29:57.84886006Z stdout F   [2m2025-04-14T15:29:57.848503Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001497[0m
+2025-04-14T15:30:17.846824546Z stdout F   [2m2025-04-14T15:30:17.846496Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000132[0m
+2025-04-14T15:30:26.214317233Z stdout F   [2m2025-04-14T15:30:26.214125Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000195[0m
+2025-04-14T15:30:37.84780796Z stdout F   [2m2025-04-14T15:30:37.847476Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000990[0m
+2025-04-14T15:30:56.215329511Z stdout F   [2m2025-04-14T15:30:56.214951Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000110[0m
+2025-04-14T15:30:57.846914547Z stdout F   [2m2025-04-14T15:30:57.846710Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000145[0m
+2025-04-14T15:31:17.847460052Z stdout F   [2m2025-04-14T15:31:17.847158Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001244[0m
+2025-04-14T15:31:26.215644894Z stdout F   [2m2025-04-14T15:31:26.215297Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000213[0m
+2025-04-14T15:31:37.847510443Z stdout F   [2m2025-04-14T15:31:37.847044Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000236[0m
+2025-04-14T15:31:56.214947685Z stdout F   [2m2025-04-14T15:31:56.214654Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000196[0m
+2025-04-14T15:31:57.850884477Z stdout F   [2m2025-04-14T15:31:57.850111Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003026[0m
+2025-04-14T15:32:17.847346409Z stdout F   [2m2025-04-14T15:32:17.847045Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000231[0m
+2025-04-14T15:32:26.216075975Z stdout F   [2m2025-04-14T15:32:26.215739Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000133[0m
+2025-04-14T15:32:37.849270564Z stdout F   [2m2025-04-14T15:32:37.848945Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001798[0m
+2025-04-14T15:32:56.215334462Z stdout F   [2m2025-04-14T15:32:56.214945Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000163[0m
+2025-04-14T15:32:57.847966731Z stdout F   [2m2025-04-14T15:32:57.847716Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000381[0m
+2025-04-14T15:33:17.850902141Z stdout F   [2m2025-04-14T15:33:17.850635Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002904[0m
+2025-04-14T15:33:26.214763251Z stdout F   [2m2025-04-14T15:33:26.214467Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000134[0m
+2025-04-14T15:33:37.846980002Z stdout F   [2m2025-04-14T15:33:37.846665Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000320[0m
+2025-04-14T15:33:56.215236049Z stdout F   [2m2025-04-14T15:33:56.214906Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000213[0m
+2025-04-14T15:33:57.657835612Z stdout F   [2m2025-04-14T15:33:57.657493Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.001855[0m
+2025-04-14T15:33:57.716193734Z stdout F   [2m2025-04-14T15:33:57.715884Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.002246[0m
+2025-04-14T15:33:57.73105003Z stdout F   [2m2025-04-14T15:33:57.730812Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002618[0m
+2025-04-14T15:33:57.848230573Z stdout F   [2m2025-04-14T15:33:57.848027Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001527[0m
+2025-04-14T15:34:17.85242548Z stdout F   [2m2025-04-14T15:34:17.852021Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.004171[0m
+2025-04-14T15:34:26.214994186Z stdout F   [2m2025-04-14T15:34:26.214728Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000163[0m
+2025-04-14T15:34:37.848667229Z stdout F   [2m2025-04-14T15:34:37.848261Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000366[0m
+2025-04-14T15:34:56.215758202Z stdout F   [2m2025-04-14T15:34:56.215453Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000141[0m
+2025-04-14T15:34:57.848965769Z stdout F   [2m2025-04-14T15:34:57.848620Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001771[0m
+2025-04-14T15:35:17.847322036Z stdout F   [2m2025-04-14T15:35:17.846871Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000418[0m
+2025-04-14T15:35:26.215394762Z stdout F   [2m2025-04-14T15:35:26.214984Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000152[0m
+2025-04-14T15:35:37.848791762Z stdout F   [2m2025-04-14T15:35:37.848417Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001688[0m
+2025-04-14T15:35:56.216218609Z stdout F   [2m2025-04-14T15:35:56.215927Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000145[0m
+2025-04-14T15:35:57.847229685Z stdout F   [2m2025-04-14T15:35:57.846855Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000166[0m
+2025-04-14T15:36:17.852957261Z stdout F   [2m2025-04-14T15:36:17.851245Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003988[0m
+2025-04-14T15:36:26.216066996Z stdout F   [2m2025-04-14T15:36:26.215804Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000373[0m
+2025-04-14T15:36:37.847506436Z stdout F   [2m2025-04-14T15:36:37.847274Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000190[0m
+2025-04-14T15:36:56.216776749Z stdout F   [2m2025-04-14T15:36:56.216471Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000616[0m
+2025-04-14T15:36:57.850211413Z stdout F   [2m2025-04-14T15:36:57.849808Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002220[0m
+2025-04-14T15:37:17.848594268Z stdout F   [2m2025-04-14T15:37:17.848219Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000603[0m
+2025-04-14T15:37:26.215628392Z stdout F   [2m2025-04-14T15:37:26.215345Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000276[0m
+2025-04-14T15:37:37.851171227Z stdout F   [2m2025-04-14T15:37:37.850835Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003776[0m
+2025-04-14T15:37:56.214666763Z stdout F   [2m2025-04-14T15:37:56.214444Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000120[0m
+2025-04-14T15:37:57.849341325Z stdout F   [2m2025-04-14T15:37:57.847072Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000160[0m
+2025-04-14T15:38:17.848995102Z stdout F   [2m2025-04-14T15:38:17.848529Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001906[0m
+2025-04-14T15:38:26.215025183Z stdout F   [2m2025-04-14T15:38:26.214673Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000309[0m
+2025-04-14T15:38:37.84775691Z stdout F   [2m2025-04-14T15:38:37.847343Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000273[0m
+2025-04-14T15:38:56.215195935Z stdout F   [2m2025-04-14T15:38:56.214905Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000153[0m
+2025-04-14T15:38:57.670809336Z stdout F   [2m2025-04-14T15:38:57.670458Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.003760[0m
+2025-04-14T15:38:57.724169735Z stdout F   [2m2025-04-14T15:38:57.723781Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.001169[0m
+2025-04-14T15:38:57.740569584Z stdout F   [2m2025-04-14T15:38:57.740285Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.001596[0m
+2025-04-14T15:38:57.848425294Z stdout F   [2m2025-04-14T15:38:57.848002Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001331[0m
+2025-04-14T15:39:17.848099839Z stdout F   [2m2025-04-14T15:39:17.847796Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000165[0m
+2025-04-14T15:39:26.214842691Z stdout F   [2m2025-04-14T15:39:26.214640Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000442[0m
+2025-04-14T15:39:37.848936743Z stdout F   [2m2025-04-14T15:39:37.848660Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001868[0m
+2025-04-14T15:39:56.21623185Z stdout F   [2m2025-04-14T15:39:56.215897Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000254[0m
+2025-04-14T15:39:57.847412636Z stdout F   [2m2025-04-14T15:39:57.847069Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000184[0m
+2025-04-14T15:40:17.849141802Z stdout F   [2m2025-04-14T15:40:17.848831Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001765[0m
+2025-04-14T15:40:26.215520306Z stdout F   [2m2025-04-14T15:40:26.215239Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000166[0m
+2025-04-14T15:40:37.846474603Z stdout F   [2m2025-04-14T15:40:37.846248Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000129[0m
+2025-04-14T15:40:56.215776998Z stdout F   [2m2025-04-14T15:40:56.215319Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000279[0m
+2025-04-14T15:40:57.848692688Z stdout F   [2m2025-04-14T15:40:57.848372Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001888[0m
+2025-04-14T15:41:17.84793789Z stdout F   [2m2025-04-14T15:41:17.847457Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000326[0m
+2025-04-14T15:41:26.215367389Z stdout F   [2m2025-04-14T15:41:26.214941Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000329[0m
+2025-04-14T15:41:37.848907579Z stdout F   [2m2025-04-14T15:41:37.848623Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001776[0m
+2025-04-14T15:41:56.215181935Z stdout F   [2m2025-04-14T15:41:56.214944Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000146[0m
+2025-04-14T15:41:57.847624865Z stdout F   [2m2025-04-14T15:41:57.847164Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000174[0m
+2025-04-14T15:42:17.848578404Z stdout F   [2m2025-04-14T15:42:17.848249Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001502[0m
+2025-04-14T15:42:26.215497942Z stdout F   [2m2025-04-14T15:42:26.215238Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000118[0m
+2025-04-14T15:42:37.847409837Z stdout F   [2m2025-04-14T15:42:37.847056Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000273[0m
+2025-04-14T15:42:56.215680202Z stdout F   [2m2025-04-14T15:42:56.215444Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000222[0m
+2025-04-14T15:42:57.847913584Z stdout F   [2m2025-04-14T15:42:57.847667Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001349[0m
+2025-04-14T15:43:17.847192005Z stdout F   [2m2025-04-14T15:43:17.846891Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000279[0m
+2025-04-14T15:43:26.215048728Z stdout F   [2m2025-04-14T15:43:26.214733Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000156[0m
+2025-04-14T15:43:37.849257054Z stdout F   [2m2025-04-14T15:43:37.848946Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002057[0m
+2025-04-14T15:43:56.215208145Z stdout F   [2m2025-04-14T15:43:56.214933Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000263[0m
+2025-04-14T15:43:57.677660546Z stdout F   [2m2025-04-14T15:43:57.677258Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.001993[0m
+2025-04-14T15:43:57.731249878Z stdout F   [2m2025-04-14T15:43:57.730771Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.002649[0m
+2025-04-14T15:43:57.750261234Z stdout F   [2m2025-04-14T15:43:57.749920Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002455[0m
+2025-04-14T15:43:57.847411952Z stdout F   [2m2025-04-14T15:43:57.847080Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000189[0m
+2025-04-14T15:44:17.849949492Z stdout F   [2m2025-04-14T15:44:17.849516Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001959[0m
+2025-04-14T15:44:26.215865433Z stdout F   [2m2025-04-14T15:44:26.215513Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000156[0m
+2025-04-14T15:44:37.846759717Z stdout F   [2m2025-04-14T15:44:37.846455Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000170[0m
+2025-04-14T15:44:56.21639546Z stdout F   [2m2025-04-14T15:44:56.216093Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000167[0m
+2025-04-14T15:44:57.849692169Z stdout F   [2m2025-04-14T15:44:57.849097Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002003[0m
+2025-04-14T15:45:17.847381385Z stdout F   [2m2025-04-14T15:45:17.847152Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000355[0m
+2025-04-14T15:45:26.216067896Z stdout F   [2m2025-04-14T15:45:26.215734Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000389[0m
+2025-04-14T15:45:37.849509858Z stdout F   [2m2025-04-14T15:45:37.849135Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002133[0m
+2025-04-14T15:45:56.214828655Z stdout F   [2m2025-04-14T15:45:56.214581Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000182[0m
+2025-04-14T15:45:57.848941822Z stdout F   [2m2025-04-14T15:45:57.848512Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000428[0m
+2025-04-14T15:46:17.851984118Z stdout F   [2m2025-04-14T15:46:17.851486Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003859[0m
+2025-04-14T15:46:26.216206468Z stdout F   [2m2025-04-14T15:46:26.215912Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000320[0m
+2025-04-14T15:46:37.847516578Z stdout F   [2m2025-04-14T15:46:37.847133Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000171[0m
+2025-04-14T15:46:56.216176956Z stdout F   [2m2025-04-14T15:46:56.215806Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000218[0m
+2025-04-14T15:46:57.850581432Z stdout F   [2m2025-04-14T15:46:57.849953Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002783[0m
+2025-04-14T15:47:17.848404789Z stdout F   [2m2025-04-14T15:47:17.847975Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000229[0m
+2025-04-14T15:47:26.21578983Z stdout F   [2m2025-04-14T15:47:26.215393Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000272[0m
+2025-04-14T15:47:37.849727792Z stdout F   [2m2025-04-14T15:47:37.849222Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002020[0m
+2025-04-14T15:47:56.216460891Z stdout F   [2m2025-04-14T15:47:56.216062Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000375[0m
+2025-04-14T15:47:57.847131544Z stdout F   [2m2025-04-14T15:47:57.846877Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000202[0m
+2025-04-14T15:48:17.850160835Z stdout F   [2m2025-04-14T15:48:17.849638Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001737[0m
+2025-04-14T15:48:26.217216719Z stdout F   [2m2025-04-14T15:48:26.216814Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000682[0m
+2025-04-14T15:48:37.848335174Z stdout F   [2m2025-04-14T15:48:37.847902Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000257[0m
+2025-04-14T15:48:56.216404051Z stdout F   [2m2025-04-14T15:48:56.215988Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000722[0m
+2025-04-14T15:48:57.687715152Z stdout F   [2m2025-04-14T15:48:57.687324Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.004515[0m
+2025-04-14T15:48:57.742639153Z stdout F   [2m2025-04-14T15:48:57.742250Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.001668[0m
+2025-04-14T15:48:57.758005083Z stdout F   [2m2025-04-14T15:48:57.757734Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002067[0m
+2025-04-14T15:48:57.850488121Z stdout F   [2m2025-04-14T15:48:57.849796Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002117[0m
+2025-04-14T15:49:17.846966229Z stdout F   [2m2025-04-14T15:49:17.846728Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000147[0m
+2025-04-14T15:49:26.215614524Z stdout F   [2m2025-04-14T15:49:26.215199Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000226[0m
+2025-04-14T15:49:37.847970602Z stdout F   [2m2025-04-14T15:49:37.847728Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001433[0m
+2025-04-14T15:49:56.215503881Z stdout F   [2m2025-04-14T15:49:56.215089Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000172[0m
+2025-04-14T15:49:57.850447832Z stdout F   [2m2025-04-14T15:49:57.849991Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002312[0m
+2025-04-14T15:50:17.847069471Z stdout F   [2m2025-04-14T15:50:17.846654Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000215[0m
+2025-04-14T15:50:26.216784344Z stdout F   [2m2025-04-14T15:50:26.216063Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000271[0m
+2025-04-14T15:50:37.848478309Z stdout F   [2m2025-04-14T15:50:37.848226Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001469[0m
+2025-04-14T15:50:56.215387886Z stdout F   [2m2025-04-14T15:50:56.215163Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000140[0m
+2025-04-14T15:50:57.846921233Z stdout F   [2m2025-04-14T15:50:57.846617Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000177[0m
+2025-04-14T15:51:17.848474869Z stdout F   [2m2025-04-14T15:51:17.848120Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001477[0m
+2025-04-14T15:51:26.215239869Z stdout F   [2m2025-04-14T15:51:26.214957Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000276[0m
+2025-04-14T15:51:37.846864422Z stdout F   [2m2025-04-14T15:51:37.846595Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000190[0m
+2025-04-14T15:51:56.215731634Z stdout F   [2m2025-04-14T15:51:56.215560Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000230[0m
+2025-04-14T15:51:57.849247849Z stdout F   [2m2025-04-14T15:51:57.849005Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001385[0m
+2025-04-14T15:52:17.847268416Z stdout F   [2m2025-04-14T15:52:17.846940Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000230[0m
+2025-04-14T15:52:26.215499468Z stdout F   [2m2025-04-14T15:52:26.215218Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000136[0m
+2025-04-14T15:52:37.848756334Z stdout F   [2m2025-04-14T15:52:37.848413Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001454[0m
+2025-04-14T15:52:56.215738813Z stdout F   [2m2025-04-14T15:52:56.215489Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000216[0m
+2025-04-14T15:52:57.848050443Z stdout F   [2m2025-04-14T15:52:57.847681Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000196[0m
+2025-04-14T15:53:17.849175503Z stdout F   [2m2025-04-14T15:53:17.848643Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002059[0m
+2025-04-14T15:53:26.215321838Z stdout F   [2m2025-04-14T15:53:26.215036Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000106[0m
+2025-04-14T15:53:37.848239059Z stdout F   [2m2025-04-14T15:53:37.847917Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000259[0m
+2025-04-14T15:53:56.216441335Z stdout F   [2m2025-04-14T15:53:56.216083Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000161[0m
+2025-04-14T15:53:57.69571923Z stdout F   [2m2025-04-14T15:53:57.695441Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.001559[0m
+2025-04-14T15:53:57.749696032Z stdout F   [2m2025-04-14T15:53:57.749331Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.002100[0m
+2025-04-14T15:53:57.768474931Z stdout F   [2m2025-04-14T15:53:57.768073Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002003[0m
+2025-04-14T15:53:57.849630725Z stdout F   [2m2025-04-14T15:53:57.849249Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002449[0m
+2025-04-14T15:54:17.846960783Z stdout F   [2m2025-04-14T15:54:17.846660Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000310[0m
+2025-04-14T15:54:26.215169182Z stdout F   [2m2025-04-14T15:54:26.214886Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000136[0m
+2025-04-14T15:54:37.848872996Z stdout F   [2m2025-04-14T15:54:37.848525Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001724[0m
+2025-04-14T15:54:56.215277494Z stdout F   [2m2025-04-14T15:54:56.214954Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000160[0m
+2025-04-14T15:54:57.847683546Z stdout F   [2m2025-04-14T15:54:57.847350Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000125[0m
+2025-04-14T15:55:17.848952261Z stdout F   [2m2025-04-14T15:55:17.848525Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002112[0m
+2025-04-14T15:55:26.215506654Z stdout F   [2m2025-04-14T15:55:26.215028Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000328[0m
+2025-04-14T15:55:37.847512307Z stdout F   [2m2025-04-14T15:55:37.847121Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000173[0m
+2025-04-14T15:55:56.215162533Z stdout F   [2m2025-04-14T15:55:56.214879Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000177[0m
+2025-04-14T15:55:57.848631886Z stdout F   [2m2025-04-14T15:55:57.848141Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000975[0m
+2025-04-14T15:56:17.852942806Z stdout F   [2m2025-04-14T15:56:17.852567Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.004876[0m
+2025-04-14T15:56:26.216402228Z stdout F   [2m2025-04-14T15:56:26.216143Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000397[0m
+2025-04-14T15:56:37.847786111Z stdout F   [2m2025-04-14T15:56:37.846982Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000210[0m
+2025-04-14T15:56:56.216792116Z stdout F   [2m2025-04-14T15:56:56.216133Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000359[0m
+2025-04-14T15:56:57.850212395Z stdout F   [2m2025-04-14T15:56:57.849891Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002240[0m
+2025-04-14T15:57:17.849056487Z stdout F   [2m2025-04-14T15:57:17.848689Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000673[0m
+2025-04-14T15:57:26.216722243Z stdout F   [2m2025-04-14T15:57:26.216472Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000428[0m
+2025-04-14T15:57:37.850131557Z stdout F   [2m2025-04-14T15:57:37.849748Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002312[0m
+2025-04-14T15:57:56.215492116Z stdout F   [2m2025-04-14T15:57:56.215159Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000215[0m
+2025-04-14T15:57:57.847132404Z stdout F   [2m2025-04-14T15:57:57.846860Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000158[0m
+2025-04-14T15:58:17.850183667Z stdout F   [2m2025-04-14T15:58:17.849795Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002116[0m
+2025-04-14T15:58:26.216498728Z stdout F   [2m2025-04-14T15:58:26.215922Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000177[0m
+2025-04-14T15:58:37.84701605Z stdout F   [2m2025-04-14T15:58:37.846672Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000152[0m
+2025-04-14T15:58:56.216007385Z stdout F   [2m2025-04-14T15:58:56.215589Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000279[0m
+2025-04-14T15:58:57.704529677Z stdout F   [2m2025-04-14T15:58:57.704173Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.002577[0m
+2025-04-14T15:58:57.759866062Z stdout F   [2m2025-04-14T15:58:57.759581Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.002276[0m
+2025-04-14T15:58:57.77925739Z stdout F   [2m2025-04-14T15:58:57.779025Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.001524[0m
+2025-04-14T15:58:57.849113217Z stdout F   [2m2025-04-14T15:58:57.848844Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002104[0m
+2025-04-14T15:59:17.847644758Z stdout F   [2m2025-04-14T15:59:17.847224Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000214[0m
+2025-04-14T15:59:26.215874641Z stdout F   [2m2025-04-14T15:59:26.215593Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000358[0m
+2025-04-14T15:59:37.849318475Z stdout F   [2m2025-04-14T15:59:37.848945Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002321[0m
+2025-04-14T15:59:56.214960017Z stdout F   [2m2025-04-14T15:59:56.214618Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000274[0m
+2025-04-14T15:59:57.847148292Z stdout F   [2m2025-04-14T15:59:57.846857Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000165[0m
+2025-04-14T16:00:17.848659086Z stdout F   [2m2025-04-14T16:00:17.848377Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001369[0m
+2025-04-14T16:00:26.215549323Z stdout F   [2m2025-04-14T16:00:26.215219Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000213[0m
+2025-04-14T16:00:37.847893141Z stdout F   [2m2025-04-14T16:00:37.847366Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000186[0m
+2025-04-14T16:00:56.21532458Z stdout F   [2m2025-04-14T16:00:56.215038Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000205[0m
+2025-04-14T16:00:57.848807501Z stdout F   [2m2025-04-14T16:00:57.848313Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001734[0m
+2025-04-14T16:01:17.84833514Z stdout F   [2m2025-04-14T16:01:17.847780Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000182[0m
+2025-04-14T16:01:26.215110167Z stdout F   [2m2025-04-14T16:01:26.214729Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000226[0m
+2025-04-14T16:01:37.848572406Z stdout F   [2m2025-04-14T16:01:37.848238Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001560[0m
+2025-04-14T16:01:56.216000662Z stdout F   [2m2025-04-14T16:01:56.215669Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000218[0m
+2025-04-14T16:01:57.847797139Z stdout F   [2m2025-04-14T16:01:57.847506Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000286[0m
+2025-04-14T16:02:17.848622069Z stdout F   [2m2025-04-14T16:02:17.848269Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001811[0m
+2025-04-14T16:02:26.215345201Z stdout F   [2m2025-04-14T16:02:26.215086Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000280[0m
+2025-04-14T16:02:37.848672033Z stdout F   [2m2025-04-14T16:02:37.848206Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000744[0m
+2025-04-14T16:02:56.216107939Z stdout F   [2m2025-04-14T16:02:56.215808Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000258[0m
+2025-04-14T16:02:57.849679484Z stdout F   [2m2025-04-14T16:02:57.849199Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002036[0m
+2025-04-14T16:03:17.846975553Z stdout F   [2m2025-04-14T16:03:17.846669Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000198[0m
+2025-04-14T16:03:26.215088508Z stdout F   [2m2025-04-14T16:03:26.214858Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000113[0m
+2025-04-14T16:03:37.849097015Z stdout F   [2m2025-04-14T16:03:37.848634Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001689[0m
+2025-04-14T16:03:56.215595445Z stdout F   [2m2025-04-14T16:03:56.215132Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000198[0m
+2025-04-14T16:03:57.712860006Z stdout F   [2m2025-04-14T16:03:57.712311Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.002252[0m
+2025-04-14T16:03:57.766837663Z stdout F   [2m2025-04-14T16:03:57.766365Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.002373[0m
+2025-04-14T16:03:57.789048526Z stdout F   [2m2025-04-14T16:03:57.788602Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002487[0m
+2025-04-14T16:03:57.847902554Z stdout F   [2m2025-04-14T16:03:57.847495Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000215[0m
+2025-04-14T16:04:17.850148629Z stdout F   [2m2025-04-14T16:04:17.849809Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003044[0m
+2025-04-14T16:04:26.215511695Z stdout F   [2m2025-04-14T16:04:26.215205Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000180[0m
+2025-04-14T16:04:37.847493843Z stdout F   [2m2025-04-14T16:04:37.847160Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000318[0m
+2025-04-14T16:04:56.217243343Z stdout F   [2m2025-04-14T16:04:56.216881Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000826[0m
+2025-04-14T16:04:57.849714329Z stdout F   [2m2025-04-14T16:04:57.849245Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002562[0m
+2025-04-14T16:05:17.852889074Z stdout F   [2m2025-04-14T16:05:17.852244Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.003586[0m
+2025-04-14T16:05:26.215342478Z stdout F   [2m2025-04-14T16:05:26.214989Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000242[0m
+2025-04-14T16:05:37.848320506Z stdout F   [2m2025-04-14T16:05:37.847882Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000385[0m
+2025-04-14T16:05:56.216048889Z stdout F   [2m2025-04-14T16:05:56.215688Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000219[0m
+2025-04-14T16:05:57.849661344Z stdout F   [2m2025-04-14T16:05:57.849149Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002469[0m
+2025-04-14T16:06:17.847314804Z stdout F   [2m2025-04-14T16:06:17.846965Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000143[0m
+2025-04-14T16:06:26.215679933Z stdout F   [2m2025-04-14T16:06:26.215163Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000256[0m
+2025-04-14T16:06:37.849565493Z stdout F   [2m2025-04-14T16:06:37.849026Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002305[0m
+2025-04-14T16:06:56.215992817Z stdout F   [2m2025-04-14T16:06:56.215681Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000326[0m
+2025-04-14T16:06:57.848498292Z stdout F   [2m2025-04-14T16:06:57.847969Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000339[0m
+2025-04-14T16:07:17.848639532Z stdout F   [2m2025-04-14T16:07:17.848276Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001324[0m
+2025-04-14T16:07:26.214571956Z stdout F   [2m2025-04-14T16:07:26.214314Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000106[0m
+2025-04-14T16:07:37.847220915Z stdout F   [2m2025-04-14T16:07:37.846932Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000125[0m
+2025-04-14T16:07:56.214775284Z stdout F   [2m2025-04-14T16:07:56.214493Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000162[0m
+2025-04-14T16:07:57.848644715Z stdout F   [2m2025-04-14T16:07:57.848336Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001234[0m
+2025-04-14T16:08:17.847599394Z stdout F   [2m2025-04-14T16:08:17.847087Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000185[0m
+2025-04-14T16:08:26.215194266Z stdout F   [2m2025-04-14T16:08:26.214844Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000137[0m
+2025-04-14T16:08:37.850340799Z stdout F   [2m2025-04-14T16:08:37.849951Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.002152[0m
+2025-04-14T16:08:56.215458596Z stdout F   [2m2025-04-14T16:08:56.215162Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000315[0m
+2025-04-14T16:08:57.720519265Z stdout F   [2m2025-04-14T16:08:57.720107Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "PUT /v0/app-nodes/ubuntu-mk8s-1 HTTP/1.1" 204 0 "-" "-" 0.002939[0m
+2025-04-14T16:08:57.777706042Z stdout F   [2m2025-04-14T16:08:57.777366Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "PUT /v0/app-nodes/ubuntu-mk8s-3 HTTP/1.1" 204 0 "-" "-" 0.001775[0m
+2025-04-14T16:08:57.797015265Z stdout F   [2m2025-04-14T16:08:57.796779Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.232.64 "PUT /v0/app-nodes/ubuntu-mk8s-2 HTTP/1.1" 204 0 "-" "-" 0.002497[0m
+2025-04-14T16:08:57.848110702Z stdout F   [2m2025-04-14T16:08:57.847663Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000356[0m
+2025-04-14T16:09:17.848835364Z stdout F   [2m2025-04-14T16:09:17.848568Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001967[0m
+2025-04-14T16:09:26.215625469Z stdout F   [2m2025-04-14T16:09:26.215245Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000183[0m
+2025-04-14T16:09:37.847080196Z stdout F   [2m2025-04-14T16:09:37.846833Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000252[0m
+2025-04-14T16:09:56.215416146Z stdout F   [2m2025-04-14T16:09:56.215085Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000232[0m
+2025-04-14T16:09:57.848141801Z stdout F   [2m2025-04-14T16:09:57.847882Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001357[0m
+2025-04-14T16:10:17.847141134Z stdout F   [2m2025-04-14T16:10:17.846817Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.000181[0m
+2025-04-14T16:10:26.215054015Z stdout F   [2m2025-04-14T16:10:26.214803Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /live HTTP/1.1" 200 4 "-" "kube-probe/1.32" 0.000170[0m
+2025-04-14T16:10:34.396367207Z stdout F   [2m2025-04-14T16:10:34.396031Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/volumes?max_entries=200&starting_token=0 HTTP/1.1" 200 14 "-" "-" 0.004732[0m
+2025-04-14T16:10:34.412406358Z stdout F   [2m2025-04-14T16:10:34.412096Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/volumes/snapshots?max_entries=200&starting_token=0 HTTP/1.1" 200 14 "-" "-" 0.002871[0m
+2025-04-14T16:10:34.425228003Z stdout F   [2m2025-04-14T16:10:34.424866Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/pools HTTP/1.1" 200 2 "-" "-" 0.002480[0m
+2025-04-14T16:10:34.436127486Z stdout F   [2m2025-04-14T16:10:34.435832Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes HTTP/1.1" 200 763 "-" "-" 0.002022[0m
+2025-04-14T16:10:34.482352419Z stdout F   [2m2025-04-14T16:10:34.481993Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes/ubuntu-mk8s-1/block_devices?all=true HTTP/1.1" 200 5541 "-" "-" 0.038371[0m
+2025-04-14T16:10:34.546357607Z stdout F   [2m2025-04-14T16:10:34.545962Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:10.1.70.192 "GET /v0/nodes/ubuntu-mk8s-2/block_devices?all=true HTTP/1.1" 200 5541 "-" "-" 0.053740[0m
+2025-04-14T16:10:37.848890155Z stdout F   [2m2025-04-14T16:10:37.848493Z[0m [32m INFO[0m [1;32mactix_web::middleware::logger[0m[32m: [32m::ffff:49.13.144.60 "GET /ready HTTP/1.1" 200 5 "-" "kube-probe/1.32" 0.001683[0m
+2025-04-14T14:53:36.885912677Z stdout F Control plane REST server revision 11017a07de5c (v2.9.0-alpha.0+9)
+2025-04-14T14:53:36.887610869Z stdout F Using options: CliArgs { https: "[::]:8080", http: Some("[::]:8081"), core_grpc: https://mayastor-agent-core:50051/, core_liveness_check_frequency: 20s, json_grpc: None, cert_file: None, key_file: None, dummy_certificates: true, jaeger: None, jwk: None, no_auth: true, request_timeout: Duration(5s), tracing_tags: [], no_min_timeouts: false, workers: 8, max_workers: 8, fmt_style: Pretty, ansi_colors: true }
+2025-04-14T14:53:36.990778836Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-server-2.5.0/src/builder.rs:272
+2025-04-14T14:53:36.9907883Z stdout F
+2025-04-14T14:53:36.990799052Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-server-2.5.0/src/server.rs:191
+2025-04-14T14:53:36.990802601Z stdout F
+2025-04-14T14:53:36.990815944Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-server-2.5.0/src/server.rs:197
+2025-04-14T14:53:36.990818361Z stdout F
+2025-04-14T14:53:36.990824008Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-server-2.5.0/src/server.rs:197
+2025-04-14T14:53:36.990826431Z stdout F
+2025-04-14T14:53:41.282630354Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:41.282634883Z stdout F
+2025-04-14T14:53:44.53235729Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:44.532362034Z stdout F
+2025-04-14T14:53:44.873885884Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:44.873895808Z stdout F
+2025-04-14T14:53:45.034007197Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:45.034017085Z stdout F
+2025-04-14T14:53:45.150216654Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:45.150221423Z stdout F
+2025-04-14T14:53:45.339274406Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:45.339282623Z stdout F
+2025-04-14T14:53:56.215450959Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:56.215465627Z stdout F
+2025-04-14T14:53:57.459460611Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:57.459464766Z stdout F
+2025-04-14T14:53:57.574177935Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:57.574183017Z stdout F
+2025-04-14T14:53:57.653553968Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:57.653557362Z stdout F
+2025-04-14T14:53:57.849593542Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:53:57.849597265Z stdout F
+2025-04-14T14:54:17.847667706Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:54:17.847674826Z stdout F
+2025-04-14T14:54:26.216180107Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:54:26.216184255Z stdout F
+2025-04-14T14:54:37.848429585Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:54:37.848434455Z stdout F
+2025-04-14T14:54:56.216317199Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:54:56.216329156Z stdout F
+2025-04-14T14:54:57.847652857Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:54:57.847736415Z stdout F
+2025-04-14T14:55:17.8488754Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:55:17.848888151Z stdout F
+2025-04-14T14:55:26.215077145Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:55:26.215086235Z stdout F
+2025-04-14T14:55:37.847511427Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:55:37.847517167Z stdout F
+2025-04-14T14:55:56.215622916Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:55:56.215634598Z stdout F
+2025-04-14T14:55:57.849145741Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:55:57.84915229Z stdout F
+2025-04-14T14:56:17.847793395Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:17.847802483Z stdout F
+2025-04-14T14:56:26.216260618Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:26.216270869Z stdout F
+2025-04-14T14:56:37.84940141Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:37.849409457Z stdout F
+2025-04-14T14:56:56.215580549Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:56.215586966Z stdout F
+2025-04-14T14:56:56.520424797Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:56.52043281Z stdout F
+2025-04-14T14:56:56.536064253Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:56.536073749Z stdout F
+2025-04-14T14:56:56.582766556Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:56.582780223Z stdout F
+2025-04-14T14:56:56.595211461Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:56.59521941Z stdout F
+2025-04-14T14:56:56.658431054Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:56.658439699Z stdout F
+2025-04-14T14:56:56.723264159Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:56.723274796Z stdout F
+2025-04-14T14:56:57.847789768Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:56:57.847801143Z stdout F
+2025-04-14T14:57:17.848771593Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:57:17.848783321Z stdout F
+2025-04-14T14:57:26.215481755Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:57:26.215496214Z stdout F
+2025-04-14T14:57:37.847625842Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:57:37.847633677Z stdout F
+2025-04-14T14:57:56.21670426Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:57:56.216719958Z stdout F
+2025-04-14T14:57:57.849758588Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:57:57.849768534Z stdout F
+2025-04-14T14:58:17.847981558Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:58:17.847987929Z stdout F
+2025-04-14T14:58:26.2162991Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:58:26.216303026Z stdout F
+2025-04-14T14:58:37.84992873Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:58:37.849944791Z stdout F
+2025-04-14T14:58:56.217586908Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:58:56.217608967Z stdout F
+2025-04-14T14:58:57.470711125Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:58:57.470718788Z stdout F
+2025-04-14T14:58:57.583731424Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:58:57.583739314Z stdout F
+2025-04-14T14:58:57.666246085Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:58:57.666257261Z stdout F
+2025-04-14T14:58:57.848272634Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:58:57.848278871Z stdout F
+2025-04-14T14:59:00.191249852Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:00.191260814Z stdout F
+2025-04-14T14:59:00.202035881Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:00.202041463Z stdout F
+2025-04-14T14:59:00.212629778Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:00.212634122Z stdout F
+2025-04-14T14:59:00.281436106Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:00.281442823Z stdout F
+2025-04-14T14:59:00.338863911Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:00.338868179Z stdout F
+2025-04-14T14:59:00.428795594Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:00.428801413Z stdout F
+2025-04-14T14:59:17.848869461Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:17.848881764Z stdout F
+2025-04-14T14:59:26.215279636Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:26.215286014Z stdout F
+2025-04-14T14:59:37.8483592Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:37.848392321Z stdout F
+2025-04-14T14:59:56.215637491Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:56.215642699Z stdout F
+2025-04-14T14:59:57.850033126Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T14:59:57.850046487Z stdout F
+2025-04-14T15:00:17.847450347Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:00:17.847476095Z stdout F
+2025-04-14T15:00:26.2152408Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:00:26.215248831Z stdout F
+2025-04-14T15:00:37.848174952Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:00:37.848181955Z stdout F
+2025-04-14T15:00:56.216173189Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:00:56.216178002Z stdout F
+2025-04-14T15:00:57.850277182Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:00:57.850281479Z stdout F
+2025-04-14T15:01:17.847653747Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:01:17.847670212Z stdout F
+2025-04-14T15:01:26.217709939Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:01:26.217723627Z stdout F
+2025-04-14T15:01:37.84995459Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:01:37.849971511Z stdout F
+2025-04-14T15:01:56.216375183Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:01:56.21638619Z stdout F
+2025-04-14T15:01:57.8481724Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:01:57.84819243Z stdout F
+2025-04-14T15:02:17.849598282Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:02:17.849605802Z stdout F
+2025-04-14T15:02:26.216965336Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:02:26.216975623Z stdout F
+2025-04-14T15:02:37.848213029Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:02:37.848223253Z stdout F
+2025-04-14T15:02:56.215655311Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:02:56.215663471Z stdout F
+2025-04-14T15:02:57.849780311Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:02:57.84979695Z stdout F
+2025-04-14T15:03:17.847221935Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:03:17.847227311Z stdout F
+2025-04-14T15:03:26.215955627Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:03:26.215967624Z stdout F
+2025-04-14T15:03:37.848899822Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:03:37.848913132Z stdout F
+2025-04-14T15:03:56.215610207Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:03:56.21561638Z stdout F
+2025-04-14T15:03:57.479986065Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:03:57.479996853Z stdout F
+2025-04-14T15:03:57.594129606Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:03:57.594134542Z stdout F
+2025-04-14T15:03:57.674244069Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:03:57.674260962Z stdout F
+2025-04-14T15:03:57.84767912Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:03:57.847691104Z stdout F
+2025-04-14T15:04:17.849146864Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:04:17.849152575Z stdout F
+2025-04-14T15:04:26.216084937Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:04:26.216097279Z stdout F
+2025-04-14T15:04:37.847085165Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:04:37.847093025Z stdout F
+2025-04-14T15:04:56.215996466Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:04:56.216003705Z stdout F
+2025-04-14T15:04:57.850448906Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:04:57.850461958Z stdout F
+2025-04-14T15:05:17.081066856Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:17.081080127Z stdout F
+2025-04-14T15:05:17.092469709Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:17.092473885Z stdout F
+2025-04-14T15:05:17.102203597Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:17.102207925Z stdout F
+2025-04-14T15:05:17.113153151Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:17.113178778Z stdout F
+2025-04-14T15:05:17.169953637Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:17.169959341Z stdout F
+2025-04-14T15:05:17.245250671Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:17.245261324Z stdout F
+2025-04-14T15:05:17.847624151Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:17.847628726Z stdout F
+2025-04-14T15:05:26.215172681Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:26.215178344Z stdout F
+2025-04-14T15:05:37.848401555Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:37.848408163Z stdout F
+2025-04-14T15:05:56.215965003Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:56.215973357Z stdout F
+2025-04-14T15:05:57.8484749Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:05:57.848483731Z stdout F
+2025-04-14T15:06:17.849224709Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:06:17.8492347Z stdout F
+2025-04-14T15:06:26.215623484Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:06:26.215631556Z stdout F
+2025-04-14T15:06:37.847363377Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:06:37.847372274Z stdout F
+2025-04-14T15:06:56.215861901Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:06:56.215865536Z stdout F
+2025-04-14T15:06:57.84922799Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:06:57.849232635Z stdout F
+2025-04-14T15:07:17.847308574Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:07:17.847327214Z stdout F
+2025-04-14T15:07:26.21537364Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:07:26.215379034Z stdout F
+2025-04-14T15:07:37.850218838Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:07:37.850238016Z stdout F
+2025-04-14T15:07:56.215498237Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:07:56.215505423Z stdout F
+2025-04-14T15:07:57.847006048Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:07:57.847010684Z stdout F
+2025-04-14T15:08:17.847955846Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:08:17.847961634Z stdout F
+2025-04-14T15:08:26.215332589Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:08:26.215343068Z stdout F
+2025-04-14T15:08:37.847101249Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:08:37.84711013Z stdout F
+2025-04-14T15:08:56.216245788Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:08:56.216251157Z stdout F
+2025-04-14T15:08:57.489737891Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:08:57.489750464Z stdout F
+2025-04-14T15:08:57.601683994Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:08:57.601693073Z stdout F
+2025-04-14T15:08:57.685950999Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:08:57.68595804Z stdout F
+2025-04-14T15:08:57.848761777Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:08:57.848765198Z stdout F
+2025-04-14T15:09:17.847596713Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:09:17.84760036Z stdout F
+2025-04-14T15:09:26.216180045Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:09:26.216189107Z stdout F
+2025-04-14T15:09:37.850492981Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:09:37.850506358Z stdout F
+2025-04-14T15:09:56.217091427Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:09:56.217107513Z stdout F
+2025-04-14T15:09:57.848716344Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:09:57.848737085Z stdout F
+2025-04-14T15:10:17.854999904Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:10:17.855024146Z stdout F
+2025-04-14T15:10:26.216438741Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:10:26.216444217Z stdout F
+2025-04-14T15:10:37.847568364Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:10:37.847579684Z stdout F
+2025-04-14T15:10:56.216454797Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:10:56.21645986Z stdout F
+2025-04-14T15:10:57.84986317Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:10:57.849874149Z stdout F
+2025-04-14T15:11:17.847480008Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:11:17.847491698Z stdout F
+2025-04-14T15:11:26.215592438Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:11:26.215619297Z stdout F
+2025-04-14T15:11:37.849109228Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:11:37.849124213Z stdout F
+2025-04-14T15:11:56.215194428Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:11:56.215206336Z stdout F
+2025-04-14T15:11:57.848243055Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:11:57.848251882Z stdout F
+2025-04-14T15:12:17.849964952Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:12:17.849971539Z stdout F
+2025-04-14T15:12:26.217915832Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:12:26.21792042Z stdout F
+2025-04-14T15:12:37.847475195Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:12:37.84747951Z stdout F
+2025-04-14T15:12:56.21569388Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:12:56.215698764Z stdout F
+2025-04-14T15:12:57.849503573Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:12:57.84951614Z stdout F
+2025-04-14T15:13:17.847330683Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:13:17.847341687Z stdout F
+2025-04-14T15:13:26.214788743Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:13:26.214794013Z stdout F
+2025-04-14T15:13:37.848356052Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:13:37.848365003Z stdout F
+2025-04-14T15:13:56.215382401Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:13:56.215396956Z stdout F
+2025-04-14T15:13:57.570295779Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:13:57.57030045Z stdout F
+2025-04-14T15:13:57.680896409Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:13:57.680902741Z stdout F
+2025-04-14T15:13:57.697184114Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:13:57.697194217Z stdout F
+2025-04-14T15:13:57.848164795Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:13:57.848168091Z stdout F
+2025-04-14T15:14:17.849285986Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:14:17.849298722Z stdout F
+2025-04-14T15:14:26.215204635Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:14:26.215209671Z stdout F
+2025-04-14T15:14:37.847809203Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:14:37.847818516Z stdout F
+2025-04-14T15:14:56.214970868Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:14:56.214978652Z stdout F
+2025-04-14T15:14:57.850461535Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:14:57.850485473Z stdout F
+2025-04-14T15:15:17.848381895Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:15:17.848388747Z stdout F
+2025-04-14T15:15:26.21560988Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:15:26.215620651Z stdout F
+2025-04-14T15:15:37.849390118Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:15:37.849400645Z stdout F
+2025-04-14T15:15:56.215804088Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:15:56.215816087Z stdout F
+2025-04-14T15:15:57.847614856Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:15:57.847618451Z stdout F
+2025-04-14T15:16:17.849368097Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:16:17.849385001Z stdout F
+2025-04-14T15:16:26.215491671Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:16:26.215499089Z stdout F
+2025-04-14T15:16:37.847930005Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:16:37.84793626Z stdout F
+2025-04-14T15:16:56.215519098Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:16:56.215524864Z stdout F
+2025-04-14T15:16:57.848998786Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:16:57.849002976Z stdout F
+2025-04-14T15:17:17.846882011Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:17:17.84688768Z stdout F
+2025-04-14T15:17:26.215022212Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:17:26.215026224Z stdout F
+2025-04-14T15:17:37.850708571Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:17:37.850717513Z stdout F
+2025-04-14T15:17:56.216611768Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:17:56.216642846Z stdout F
+2025-04-14T15:17:57.849159379Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:17:57.849174381Z stdout F
+2025-04-14T15:18:17.849072849Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:18:17.849078476Z stdout F
+2025-04-14T15:18:26.216098574Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:18:26.216112714Z stdout F
+2025-04-14T15:18:37.853039678Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:18:37.853055975Z stdout F
+2025-04-14T15:18:56.215446449Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:18:56.215459262Z stdout F
+2025-04-14T15:18:57.579643207Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:18:57.579649188Z stdout F
+2025-04-14T15:18:57.689747379Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:18:57.689756992Z stdout F
+2025-04-14T15:18:57.707620991Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:18:57.707627618Z stdout F
+2025-04-14T15:18:57.847187064Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:18:57.847197077Z stdout F
+2025-04-14T15:19:17.849823705Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:19:17.849836131Z stdout F
+2025-04-14T15:19:26.222824679Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:19:26.222868544Z stdout F
+2025-04-14T15:19:37.848114839Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:19:37.848123621Z stdout F
+2025-04-14T15:19:56.215782978Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:19:56.215794679Z stdout F
+2025-04-14T15:19:57.850105001Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:19:57.850117061Z stdout F
+2025-04-14T15:20:17.847869124Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:20:17.847873329Z stdout F
+2025-04-14T15:20:26.21571735Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:20:26.21572396Z stdout F
+2025-04-14T15:20:37.849184431Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:20:37.849195543Z stdout F
+2025-04-14T15:20:56.215599704Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:20:56.215611615Z stdout F
+2025-04-14T15:20:57.847240378Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:20:57.847244651Z stdout F
+2025-04-14T15:21:17.84911141Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:21:17.849121696Z stdout F
+2025-04-14T15:21:26.216043469Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:21:26.216057226Z stdout F
+2025-04-14T15:21:37.848326798Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:21:37.848332535Z stdout F
+2025-04-14T15:21:56.215041305Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:21:56.215052526Z stdout F
+2025-04-14T15:21:57.849483387Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:21:57.849490737Z stdout F
+2025-04-14T15:22:17.847702857Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:22:17.847710913Z stdout F
+2025-04-14T15:22:26.215637468Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:22:26.215653936Z stdout F
+2025-04-14T15:22:37.849246057Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:22:37.849258143Z stdout F
+2025-04-14T15:22:56.215553471Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:22:56.215562635Z stdout F
+2025-04-14T15:22:57.847166155Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:22:57.847171734Z stdout F
+2025-04-14T15:23:17.849036852Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:23:17.849049072Z stdout F
+2025-04-14T15:23:26.215934818Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:23:26.215941627Z stdout F
+2025-04-14T15:23:37.847452521Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:23:37.847459542Z stdout F
+2025-04-14T15:23:56.216319747Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:23:56.216335969Z stdout F
+2025-04-14T15:23:57.587168245Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:23:57.58717452Z stdout F
+2025-04-14T15:23:57.69875216Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:23:57.698765557Z stdout F
+2025-04-14T15:23:57.714437793Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:23:57.714450648Z stdout F
+2025-04-14T15:23:57.849557927Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:23:57.849565787Z stdout F
+2025-04-14T15:24:17.848334743Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:24:17.848347229Z stdout F
+2025-04-14T15:24:26.215359778Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:24:26.215366195Z stdout F
+2025-04-14T15:24:37.850750352Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:24:37.850767872Z stdout F
+2025-04-14T15:24:56.21636522Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:24:56.216372474Z stdout F
+2025-04-14T15:24:57.848493726Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:24:57.848530463Z stdout F
+2025-04-14T15:25:17.852375539Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:25:17.852380547Z stdout F
+2025-04-14T15:25:26.216450827Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:25:26.216457757Z stdout F
+2025-04-14T15:25:37.847706406Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:25:37.847723737Z stdout F
+2025-04-14T15:25:56.215228288Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:25:56.215259171Z stdout F
+2025-04-14T15:25:57.850456048Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:25:57.850462003Z stdout F
+2025-04-14T15:26:17.848216265Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:26:17.848251592Z stdout F
+2025-04-14T15:26:26.215304019Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:26:26.215319279Z stdout F
+2025-04-14T15:26:37.850290779Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:26:37.850308452Z stdout F
+2025-04-14T15:26:56.216237533Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:26:56.216255526Z stdout F
+2025-04-14T15:26:57.847340292Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:26:57.847352739Z stdout F
+2025-04-14T15:27:17.848356212Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:27:17.848359624Z stdout F
+2025-04-14T15:27:26.2155539Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:27:26.215561419Z stdout F
+2025-04-14T15:27:37.847793021Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:27:37.847797692Z stdout F
+2025-04-14T15:27:56.215668695Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:27:56.215674381Z stdout F
+2025-04-14T15:27:57.849711013Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:27:57.849721651Z stdout F
+2025-04-14T15:28:17.847093372Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:28:17.847097477Z stdout F
+2025-04-14T15:28:26.21541414Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:28:26.215421936Z stdout F
+2025-04-14T15:28:37.848675141Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:28:37.848680412Z stdout F
+2025-04-14T15:28:56.215570705Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:28:56.215584258Z stdout F
+2025-04-14T15:28:57.598802063Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:28:57.598812912Z stdout F
+2025-04-14T15:28:57.709514458Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:28:57.709518792Z stdout F
+2025-04-14T15:28:57.72245773Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:28:57.722467086Z stdout F
+2025-04-14T15:28:57.847324128Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:28:57.847327887Z stdout F
+2025-04-14T15:29:17.849037441Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:29:17.849047455Z stdout F
+2025-04-14T15:29:26.215268626Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:29:26.215279272Z stdout F
+2025-04-14T15:29:37.847730501Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:29:37.847736032Z stdout F
+2025-04-14T15:29:56.216143434Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:29:56.216150469Z stdout F
+2025-04-14T15:29:57.848904633Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:29:57.848915191Z stdout F
+2025-04-14T15:30:17.846855098Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:30:17.846861591Z stdout F
+2025-04-14T15:30:26.214342693Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:30:26.214348769Z stdout F
+2025-04-14T15:30:37.847853407Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:30:37.847890641Z stdout F
+2025-04-14T15:30:56.215358537Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:30:56.215363004Z stdout F
+2025-04-14T15:30:57.846939955Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:30:57.846944061Z stdout F
+2025-04-14T15:31:17.847487113Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:31:17.84749683Z stdout F
+2025-04-14T15:31:26.215724569Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:31:26.215736598Z stdout F
+2025-04-14T15:31:37.847610153Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:31:37.847631093Z stdout F
+2025-04-14T15:31:56.214981591Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:31:56.214988474Z stdout F
+2025-04-14T15:31:57.850942815Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:31:57.8509595Z stdout F
+2025-04-14T15:32:17.847373009Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:32:17.847378262Z stdout F
+2025-04-14T15:32:26.216104919Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:32:26.216110214Z stdout F
+2025-04-14T15:32:37.849306466Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:32:37.849317697Z stdout F
+2025-04-14T15:32:56.215373532Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:32:56.215377759Z stdout F
+2025-04-14T15:32:57.847992485Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:32:57.847995678Z stdout F
+2025-04-14T15:33:17.850939736Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:33:17.850944755Z stdout F
+2025-04-14T15:33:26.214808959Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:33:26.214820517Z stdout F
+2025-04-14T15:33:37.847032785Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:33:37.847039178Z stdout F
+2025-04-14T15:33:56.215277503Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:33:56.215285144Z stdout F
+2025-04-14T15:33:57.657891977Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:33:57.657907809Z stdout F
+2025-04-14T15:33:57.716221779Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:33:57.716232155Z stdout F
+2025-04-14T15:33:57.731084812Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:33:57.731093332Z stdout F
+2025-04-14T15:33:57.848277356Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:33:57.848284946Z stdout F
+2025-04-14T15:34:17.852476586Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:34:17.852524994Z stdout F
+2025-04-14T15:34:26.215022494Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:34:26.215026973Z stdout F
+2025-04-14T15:34:37.84871046Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:34:37.848728881Z stdout F
+2025-04-14T15:34:56.215796309Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:34:56.215802569Z stdout F
+2025-04-14T15:34:57.849010154Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:34:57.84902049Z stdout F
+2025-04-14T15:35:17.847377795Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:35:17.847386125Z stdout F
+2025-04-14T15:35:26.215421429Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:35:26.215426275Z stdout F
+2025-04-14T15:35:37.848828279Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:35:37.848833231Z stdout F
+2025-04-14T15:35:56.216252752Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:35:56.21625928Z stdout F
+2025-04-14T15:35:57.847278982Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:35:57.847290184Z stdout F
+2025-04-14T15:36:17.853009727Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:36:17.853016372Z stdout F
+2025-04-14T15:36:26.216104216Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:36:26.216107702Z stdout F
+2025-04-14T15:36:37.847564731Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:36:37.847573732Z stdout F
+2025-04-14T15:36:56.216803739Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:36:56.216809676Z stdout F
+2025-04-14T15:36:57.850244198Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:36:57.850250145Z stdout F
+2025-04-14T15:37:17.848660001Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:37:17.848680834Z stdout F
+2025-04-14T15:37:26.215664482Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:37:26.215671554Z stdout F
+2025-04-14T15:37:37.851261571Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:37:37.851273399Z stdout F
+2025-04-14T15:37:56.214696685Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:37:56.214701748Z stdout F
+2025-04-14T15:37:57.849372223Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:37:57.84937831Z stdout F
+2025-04-14T15:38:17.849049649Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:38:17.849062398Z stdout F
+2025-04-14T15:38:26.215088017Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:38:26.215093406Z stdout F
+2025-04-14T15:38:37.847812102Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:38:37.847821745Z stdout F
+2025-04-14T15:38:56.215324756Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:38:56.215342474Z stdout F
+2025-04-14T15:38:57.670850685Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:38:57.67085851Z stdout F
+2025-04-14T15:38:57.724227251Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:38:57.724265396Z stdout F
+2025-04-14T15:38:57.740602355Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:38:57.740607993Z stdout F
+2025-04-14T15:38:57.848480281Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:38:57.848496613Z stdout F
+2025-04-14T15:39:17.848153393Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:39:17.848175347Z stdout F
+2025-04-14T15:39:26.214875138Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:39:26.214882201Z stdout F
+2025-04-14T15:39:37.848977399Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:39:37.848986485Z stdout F
+2025-04-14T15:39:56.216291761Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:39:56.216315812Z stdout F
+2025-04-14T15:39:57.84745804Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:39:57.847466068Z stdout F
+2025-04-14T15:40:17.849191997Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:40:17.849201907Z stdout F
+2025-04-14T15:40:26.215563539Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:40:26.215569984Z stdout F
+2025-04-14T15:40:37.846502778Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:40:37.84650881Z stdout F
+2025-04-14T15:40:56.215863606Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:40:56.215881387Z stdout F
+2025-04-14T15:40:57.848734489Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:40:57.848743155Z stdout F
+2025-04-14T15:41:17.847999158Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:41:17.848015804Z stdout F
+2025-04-14T15:41:26.215412453Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:41:26.215426694Z stdout F
+2025-04-14T15:41:37.848948384Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:41:37.848953305Z stdout F
+2025-04-14T15:41:56.215218334Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:41:56.215225911Z stdout F
+2025-04-14T15:41:57.847678315Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:41:57.847682118Z stdout F
+2025-04-14T15:42:17.848623685Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:42:17.848634192Z stdout F
+2025-04-14T15:42:26.215563914Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:42:26.215579869Z stdout F
+2025-04-14T15:42:37.847478476Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:42:37.847497726Z stdout F
+2025-04-14T15:42:56.215714794Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:42:56.215721195Z stdout F
+2025-04-14T15:42:57.847942622Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:42:57.847947012Z stdout F
+2025-04-14T15:43:17.84721506Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:43:17.847219936Z stdout F
+2025-04-14T15:43:26.21508783Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:43:26.215094871Z stdout F
+2025-04-14T15:43:37.849334272Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:43:37.849341342Z stdout F
+2025-04-14T15:43:56.215239383Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:43:56.215246765Z stdout F
+2025-04-14T15:43:57.677744189Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:43:57.677751003Z stdout F
+2025-04-14T15:43:57.731402211Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:43:57.731414235Z stdout F
+2025-04-14T15:43:57.750331087Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:43:57.750338579Z stdout F
+2025-04-14T15:43:57.847448236Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:43:57.847456451Z stdout F
+2025-04-14T15:44:17.850011493Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:44:17.850025463Z stdout F
+2025-04-14T15:44:26.215909007Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:44:26.215951977Z stdout F
+2025-04-14T15:44:37.846789548Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:44:37.846793846Z stdout F
+2025-04-14T15:44:56.216428904Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:44:56.216436608Z stdout F
+2025-04-14T15:44:57.849743926Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:44:57.849760263Z stdout F
+2025-04-14T15:45:17.847417304Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:45:17.847422352Z stdout F
+2025-04-14T15:45:26.216098034Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:45:26.216121818Z stdout F
+2025-04-14T15:45:37.849581386Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:45:37.849590506Z stdout F
+2025-04-14T15:45:56.214867656Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:45:56.214873626Z stdout F
+2025-04-14T15:45:57.848973353Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:45:57.848978235Z stdout F
+2025-04-14T15:46:17.852023822Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:46:17.852029271Z stdout F
+2025-04-14T15:46:26.216255426Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:46:26.216268345Z stdout F
+2025-04-14T15:46:37.847598517Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:46:37.84760602Z stdout F
+2025-04-14T15:46:56.216211571Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:46:56.216217711Z stdout F
+2025-04-14T15:46:57.850644096Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:46:57.850661439Z stdout F
+2025-04-14T15:47:17.848474921Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:47:17.84848774Z stdout F
+2025-04-14T15:47:26.215839415Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:47:26.2158525Z stdout F
+2025-04-14T15:47:37.849800017Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:47:37.849804555Z stdout F
+2025-04-14T15:47:56.216518429Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:47:56.216530986Z stdout F
+2025-04-14T15:47:57.847183839Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:47:57.847188603Z stdout F
+2025-04-14T15:48:17.850269202Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:48:17.850286577Z stdout F
+2025-04-14T15:48:26.217261047Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:48:26.217270286Z stdout F
+2025-04-14T15:48:37.848453945Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:48:37.848469879Z stdout F
+2025-04-14T15:48:56.216474758Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:48:56.21648508Z stdout F
+2025-04-14T15:48:57.68775621Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:48:57.687766865Z stdout F
+2025-04-14T15:48:57.742672008Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:48:57.742678235Z stdout F
+2025-04-14T15:48:57.75803513Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:48:57.758043314Z stdout F
+2025-04-14T15:48:57.850562649Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:48:57.850569685Z stdout F
+2025-04-14T15:49:17.847004962Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:49:17.847015518Z stdout F
+2025-04-14T15:49:26.215650697Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:49:26.215658817Z stdout F
+2025-04-14T15:49:37.848005958Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:49:37.848011449Z stdout F
+2025-04-14T15:49:56.215562087Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:49:56.215569837Z stdout F
+2025-04-14T15:49:57.850496854Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:49:57.850520821Z stdout F
+2025-04-14T15:50:17.847134073Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:50:17.847147951Z stdout F
+2025-04-14T15:50:26.216839675Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:50:26.216852667Z stdout F
+2025-04-14T15:50:37.848511944Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:50:37.848518851Z stdout F
+2025-04-14T15:50:56.215438826Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:50:56.215444562Z stdout F
+2025-04-14T15:50:57.84695684Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:50:57.846963581Z stdout F
+2025-04-14T15:51:17.848526564Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:51:17.848574455Z stdout F
+2025-04-14T15:51:26.215266918Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:51:26.215271872Z stdout F
+2025-04-14T15:51:37.846891799Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:51:37.846896089Z stdout F
+2025-04-14T15:51:56.215767657Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:51:56.215772716Z stdout F
+2025-04-14T15:51:57.849275101Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:51:57.849279471Z stdout F
+2025-04-14T15:52:17.847322237Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:52:17.847332591Z stdout F
+2025-04-14T15:52:26.215531178Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:52:26.21555607Z stdout F
+2025-04-14T15:52:37.848783228Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:52:37.848787751Z stdout F
+2025-04-14T15:52:56.21577397Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:52:56.215779012Z stdout F
+2025-04-14T15:52:57.848128359Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:52:57.848145168Z stdout F
+2025-04-14T15:53:17.849817155Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:53:17.849829109Z stdout F
+2025-04-14T15:53:26.215370294Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:53:26.21541804Z stdout F
+2025-04-14T15:53:37.848284087Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:53:37.848292125Z stdout F
+2025-04-14T15:53:56.216492248Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:53:56.216505579Z stdout F
+2025-04-14T15:53:57.695803615Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:53:57.695811723Z stdout F
+2025-04-14T15:53:57.749727692Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:53:57.749732664Z stdout F
+2025-04-14T15:53:57.768514968Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:53:57.768527075Z stdout F
+2025-04-14T15:53:57.849711938Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:53:57.849728649Z stdout F
+2025-04-14T15:54:17.846988288Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:54:17.84699931Z stdout F
+2025-04-14T15:54:26.215212761Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:54:26.215223599Z stdout F
+2025-04-14T15:54:37.848904808Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:54:37.848937485Z stdout F
+2025-04-14T15:54:56.215318522Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:54:56.215326909Z stdout F
+2025-04-14T15:54:57.847720894Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:54:57.847730052Z stdout F
+2025-04-14T15:55:17.849001141Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:55:17.849013586Z stdout F
+2025-04-14T15:55:26.215569576Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:55:26.215583388Z stdout F
+2025-04-14T15:55:37.847630879Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:55:37.847649459Z stdout F
+2025-04-14T15:55:56.215190018Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:55:56.21519389Z stdout F
+2025-04-14T15:55:57.848685439Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:55:57.848700964Z stdout F
+2025-04-14T15:56:17.853082817Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:56:17.853094687Z stdout F
+2025-04-14T15:56:26.216435385Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:56:26.21644216Z stdout F
+2025-04-14T15:56:37.847888328Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:56:37.847900779Z stdout F
+2025-04-14T15:56:56.216886791Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:56:56.216896728Z stdout F
+2025-04-14T15:56:57.850264729Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:56:57.850273385Z stdout F
+2025-04-14T15:57:17.849089752Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:57:17.849095126Z stdout F
+2025-04-14T15:57:26.216750349Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:57:26.216755482Z stdout F
+2025-04-14T15:57:37.850180807Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:57:37.850192622Z stdout F
+2025-04-14T15:57:56.215522872Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:57:56.215554886Z stdout F
+2025-04-14T15:57:57.847168597Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:57:57.847175983Z stdout F
+2025-04-14T15:58:17.850247055Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:58:17.850265557Z stdout F
+2025-04-14T15:58:26.216604482Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:58:26.216629689Z stdout F
+2025-04-14T15:58:37.847052403Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:58:37.847057661Z stdout F
+2025-04-14T15:58:56.216101454Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:58:56.216115182Z stdout F
+2025-04-14T15:58:57.70458606Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:58:57.704589521Z stdout F
+2025-04-14T15:58:57.759901713Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:58:57.759908382Z stdout F
+2025-04-14T15:58:57.779289352Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:58:57.779294651Z stdout F
+2025-04-14T15:58:57.849138598Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:58:57.849141968Z stdout F
+2025-04-14T15:59:17.847682028Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:59:17.847687764Z stdout F
+2025-04-14T15:59:26.215907641Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:59:26.215911474Z stdout F
+2025-04-14T15:59:37.849381043Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:59:37.849439299Z stdout F
+2025-04-14T15:59:56.214996864Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:59:56.215003626Z stdout F
+2025-04-14T15:59:57.847183061Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T15:59:57.847190948Z stdout F
+2025-04-14T16:00:17.848691624Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:00:17.848717089Z stdout F
+2025-04-14T16:00:26.215575573Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:00:26.21557996Z stdout F
+2025-04-14T16:00:37.8479413Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:00:37.847950344Z stdout F
+2025-04-14T16:00:56.215365351Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:00:56.215373442Z stdout F
+2025-04-14T16:00:57.848862285Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:00:57.848871071Z stdout F
+2025-04-14T16:01:17.848393114Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:01:17.848420327Z stdout F
+2025-04-14T16:01:26.215155395Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:01:26.215165329Z stdout F
+2025-04-14T16:01:37.848612558Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:01:37.848619902Z stdout F
+2025-04-14T16:01:56.216045384Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:01:56.216055798Z stdout F
+2025-04-14T16:01:57.847825273Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:01:57.847831766Z stdout F
+2025-04-14T16:02:17.848654991Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:02:17.848659853Z stdout F
+2025-04-14T16:02:26.215401523Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:02:26.215462025Z stdout F
+2025-04-14T16:02:37.848699389Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:02:37.84870332Z stdout F
+2025-04-14T16:02:56.216157414Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:02:56.21617031Z stdout F
+2025-04-14T16:02:57.849718109Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:02:57.849725879Z stdout F
+2025-04-14T16:03:17.847006207Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:03:17.8470111Z stdout F
+2025-04-14T16:03:26.215118464Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:03:26.215124933Z stdout F
+2025-04-14T16:03:37.849165462Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:03:37.849178692Z stdout F
+2025-04-14T16:03:56.215651589Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:03:56.215669603Z stdout F
+2025-04-14T16:03:57.71291161Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:03:57.712927148Z stdout F
+2025-04-14T16:03:57.766878176Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:03:57.766893525Z stdout F
+2025-04-14T16:03:57.789151016Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:03:57.789164652Z stdout F
+2025-04-14T16:03:57.847954731Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:03:57.847965873Z stdout F
+2025-04-14T16:04:17.85017363Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:04:17.85017834Z stdout F
+2025-04-14T16:04:26.215572725Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:04:26.215581128Z stdout F
+2025-04-14T16:04:37.847561134Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:04:37.847569657Z stdout F
+2025-04-14T16:04:56.217290262Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:04:56.217297036Z stdout F
+2025-04-14T16:04:57.849764157Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:04:57.849775864Z stdout F
+2025-04-14T16:05:17.852945941Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:05:17.852961747Z stdout F
+2025-04-14T16:05:26.215379144Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:05:26.215388344Z stdout F
+2025-04-14T16:05:37.848375222Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:05:37.848386507Z stdout F
+2025-04-14T16:05:56.216096407Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:05:56.216138624Z stdout F
+2025-04-14T16:05:57.849701945Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:05:57.849710597Z stdout F
+2025-04-14T16:06:17.847354337Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:06:17.847366762Z stdout F
+2025-04-14T16:06:26.215734554Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:06:26.215749683Z stdout F
+2025-04-14T16:06:37.849611999Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:06:37.84962061Z stdout F
+2025-04-14T16:06:56.216039444Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:06:56.216050379Z stdout F
+2025-04-14T16:06:57.848590656Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:06:57.848611394Z stdout F
+2025-04-14T16:07:17.848664403Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:07:17.848669097Z stdout F
+2025-04-14T16:07:26.214617082Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:07:26.214626731Z stdout F
+2025-04-14T16:07:37.847257545Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:07:37.847261962Z stdout F
+2025-04-14T16:07:56.214818348Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:07:56.214829159Z stdout F
+2025-04-14T16:07:57.848695144Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:07:57.848699997Z stdout F
+2025-04-14T16:08:17.847664552Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:08:17.847703727Z stdout F
+2025-04-14T16:08:26.215244421Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:08:26.215255219Z stdout F
+2025-04-14T16:08:37.850395613Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:08:37.850407722Z stdout F
+2025-04-14T16:08:56.215528847Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:08:56.215574105Z stdout F
+2025-04-14T16:08:57.720591822Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:08:57.720601739Z stdout F
+2025-04-14T16:08:57.777741983Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:08:57.777748564Z stdout F
+2025-04-14T16:08:57.797037416Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:08:57.797041634Z stdout F
+2025-04-14T16:08:57.848146653Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:08:57.848153998Z stdout F
+2025-04-14T16:09:17.848865091Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:09:17.848869963Z stdout F
+2025-04-14T16:09:26.215684646Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:09:26.215732254Z stdout F
+2025-04-14T16:09:37.847116801Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:09:37.847124323Z stdout F
+2025-04-14T16:09:56.21545198Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:09:56.215460197Z stdout F
+2025-04-14T16:09:57.848167708Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:09:57.848171815Z stdout F
+2025-04-14T16:10:17.847175317Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:10:17.847180533Z stdout F
+2025-04-14T16:10:26.215092731Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:10:26.215100052Z stdout F
+2025-04-14T16:10:34.396406701Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:10:34.396413721Z stdout F
+2025-04-14T16:10:34.412457869Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:10:34.412465595Z stdout F
+2025-04-14T16:10:34.425277029Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:10:34.425286453Z stdout F
+2025-04-14T16:10:34.436163044Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:10:34.436169697Z stdout F
+2025-04-14T16:10:34.482390107Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:10:34.482433346Z stdout F
+2025-04-14T16:10:34.546398195Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:10:34.54640584Z stdout F
+2025-04-14T16:10:37.8489432Z stdout F     [2;3mat[0m /build/cargo-vendor-dir/actix-web-4.9.0/src/middleware/logger.rs:424
+2025-04-14T16:10:37.848956747Z stdout F
