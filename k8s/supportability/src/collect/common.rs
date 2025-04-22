@@ -1,8 +1,6 @@
 use crate::collect::{error::Error, rest_wrapper::RestClient};
 use chrono::Local;
 
-use crate::collect::resources::traits::Topologer;
-
 /// DumpConfig helps to create new instance of Dumper
 #[derive(Debug)]
 pub(crate) struct DumpConfig {
@@ -22,8 +20,6 @@ pub(crate) struct DumpConfig {
     pub(crate) kube_config_path: Option<std::path::PathBuf>,
     /// Specifies the timeout value to interact with other systems
     pub(crate) timeout: humantime::Duration,
-    /// Topologer implements functionality to build topological information of system
-    pub(crate) topologer: Option<Box<dyn Topologer>>,
     pub(crate) output_format: OutputFormat,
 }
 
@@ -46,21 +42,4 @@ pub(crate) fn create_and_get_tmp_directory(dir_path: String) -> Result<String, E
     let new_dir_path = std::path::Path::new(&dir_path).join(suffix_dir_name);
     std::fs::create_dir_all(new_dir_path.clone())?;
     Ok(new_dir_path.into_os_string().into_string()?)
-}
-
-impl Stringer for Vec<String> {
-    fn as_string(&self, delim: char) -> String {
-        let mut concatenate_str: String = String::new();
-        self.iter().for_each(|val| {
-            concatenate_str.push_str(val);
-            concatenate_str.push_str(delim.to_string().as_str());
-        });
-        concatenate_str.pop();
-        concatenate_str
-    }
-}
-
-/// Defines method to convert various objects to string
-pub(crate) trait Stringer {
-    fn as_string(&self, delim: char) -> String;
 }

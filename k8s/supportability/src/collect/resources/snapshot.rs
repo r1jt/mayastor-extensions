@@ -1,16 +1,12 @@
 use crate::collect::{
     logs::create_directory_if_not_exist,
-    resources::{
-        traits::{ResourceInformation, Topologer},
-        utils, ResourceError, Resourcer,
-    },
+    resources::{traits::Topologer, utils, ResourceError, Resourcer},
     rest_wrapper::RestClient,
 };
 use async_trait::async_trait;
 use openapi::models::VolumeSnapshot;
 use serde::{Deserialize, Serialize};
 use std::{
-    collections::HashSet,
     fs::File,
     io::Write,
     path::{Path, PathBuf},
@@ -44,21 +40,6 @@ impl Topologer for VolumeSnapshotTopology {
         topo_file.write_all(topology_as_pretty.as_bytes())?;
         topo_file.flush()?;
         Ok(())
-    }
-
-    fn get_unhealthy_resource_info(&self) -> HashSet<ResourceInformation> {
-        // Not neeeded for snapshot topology.
-        unimplemented!()
-    }
-
-    fn get_all_resource_info(&self) -> HashSet<ResourceInformation> {
-        // Not neeeded for snapshot topology.
-        unimplemented!()
-    }
-
-    fn get_k8s_resource_names(&self) -> Vec<String> {
-        // Not neeeded for snapshot topology.
-        unimplemented!()
     }
 }
 

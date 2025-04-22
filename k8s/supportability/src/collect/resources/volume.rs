@@ -15,14 +15,11 @@ use openapi::models::{Nexus, RebuildHistory, Volume};
 use resources::ResourceError;
 use serde::{Deserialize, Serialize};
 use std::{
-    collections::HashSet,
     fs::File,
     io::Write,
     path::{Path, PathBuf},
 };
-use traits::{
-    ResourceInformation, Resourcer, Topologer, MAYASTOR_DAEMONSET_LABEL, RESOURCE_TO_CONTAINER_NAME,
-};
+use traits::{Resourcer, Topologer};
 
 /// Holds topological information of volume(like) --> {Replicas} --> {Pools} --> {Nodes}
 /// of Volume resource
@@ -51,45 +48,6 @@ impl Topologer for VolumeTopology {
         topo_file.write_all(topology_as_pretty.as_bytes())?;
         topo_file.flush()?;
         Ok(())
-    }
-
-    fn get_unhealthy_resource_info(&self) -> HashSet<ResourceInformation> {
-        let mut resources = HashSet::new();
-        for r in self.replicas_topology.iter() {
-            resources.extend(r.get_unhealthy_resources());
-        }
-        if let Some(nexus) = &self.target {
-            if !matches!(nexus.state, openapi::models::NexusState::Online) {
-                let mut resource_info = ResourceInformation::default();
-                resource_info.set_container_name(RESOURCE_TO_CONTAINER_NAME["nexus"].to_string());
-                resource_info.set_host_name(nexus.node.clone());
-                resource_info.set_label_selector([MAYASTOR_DAEMONSET_LABEL.to_string()].to_vec());
-                resources.insert(resource_info);
-            }
-        }
-        resources
-    }
-
-    fn get_all_resource_info(&self) -> HashSet<ResourceInformation> {
-        let mut resources = HashSet::new();
-        for r in self.replicas_topology.iter() {
-            resources.extend(r.get_all_resources());
-        }
-        if let Some(nexus) = &self.target {
-            let mut resource_info = ResourceInformation::default();
-            resource_info.set_container_name(RESOURCE_TO_CONTAINER_NAME["nexus"].to_string());
-            resource_info.set_host_name(nexus.node.clone());
-            resource_info.set_label_selector([MAYASTOR_DAEMONSET_LABEL.to_string()].to_vec());
-        }
-        resources
-    }
-
-    fn get_k8s_resource_names(&self) -> Vec<String> {
-        self.replicas_topology
-            .clone()
-            .into_iter()
-            .flat_map(|r| r.get_k8s_resource_names())
-            .collect::<Vec<String>>()
     }
 }
 

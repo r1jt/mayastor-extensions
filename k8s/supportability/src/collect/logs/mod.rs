@@ -2,10 +2,7 @@ mod k8s_log;
 mod loki;
 
 use crate::collect::{
-    constants::{
-        logging_label_selector, CALLHOME_JOB_SERVICE, CONTROL_PLANE_SERVICES, DATA_PLANE_SERVICES,
-        HOST_NAME_REQUIRED_SERVICES, NATS_JOB_SERVICE, UPGRADE_JOB_SERVICE,
-    },
+    constants::logging_label_selector,
     k8s_resources::{
         client::{ClientSet, K8sResourceError},
         common::KUBERNETES_HOST_LABEL_KEY,
@@ -17,7 +14,6 @@ use async_trait::async_trait;
 use k8s_openapi::api::core::v1::{Node, Pod};
 use std::{
     collections::{HashMap, HashSet},
-    iter::Iterator,
     path::PathBuf,
 };
 
@@ -117,6 +113,7 @@ impl LogCollection {
         &self,
         pod: Pod,
         nodes_map: &HashMap<String, Node>,
+        host_name_required_svcs: &HashMap<&'static str, bool>,
     ) -> Result<HashSet<LogResource>, LogError> {
         let mut logging_resources = HashSet::new();
         let service_name = pod
@@ -134,7 +131,7 @@ impl LogCollection {
             .clone();
 
         let mut hostname = None;
-        if is_host_name_required(service_name.clone()) {
+        if is_host_name_required(service_name.clone(), host_name_required_svcs) {
             let node_name = pod
                 .spec
                 .clone()
@@ -203,6 +200,7 @@ impl LogCollection {
     async fn get_logging_resources(
         &self,
         pods: Vec<Pod>,
+        host_name_required_svcs: &HashMap<&'static str, bool>,
     ) -> Result<HashSet<LogResource>, LogError> {
         let nodes_map = self
             .k8s_logger_client
@@ -212,7 +210,10 @@ impl LogCollection {
         let mut logging_resources = HashSet::new();
 
         for pod in pods {
-            match self.pod_logging_resources(pod.clone(), &nodes_map).await {
+            match self
+                .pod_logging_resources(pod.clone(), &nodes_map, host_name_required_svcs)
+                .await
+            {
                 Ok(resources) => logging_resources.extend(resources),
                 Err(error) => log(format!(
                     "Skipping the pod {:?} due to error: {error:?}",
@@ -282,144 +283,161 @@ impl Logger for LogCollection {
         }
         Ok(())
     }
+    //
+    // async fn get_control_plane_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
+    //     // NOTE: We have to get historic logs of non-running pods, so passing field selector as
+    //     // empty value
+    //     let pods = self
+    //         .k8s_logger_client
+    //         .get_k8s_clientset()
+    //         .get_pods(&logging_label_selector(), "")
+    //         .await?;
+    //
+    //     let control_plane_pods = pods
+    //         .into_iter()
+    //         .filter(|pod| {
+    //             let service_name = pod
+    //                 .metadata
+    //                 .labels
+    //                 .as_ref()
+    //                 .unwrap_or(&std::collections::BTreeMap::new())
+    //                 .get("app")
+    //                 .unwrap_or(&"".to_string())
+    //                 .clone();
+    //             CONTROL_PLANE_SERVICES.contains_key::<str>(&service_name)
+    //         })
+    //         .collect::<Vec<Pod>>();
+    //
+    //     self.get_logging_resources(control_plane_pods).await
+    // }
+    //
+    // async fn get_data_plane_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
+    //     // NOTE: We have to get historic logs of non-running pods, so passing field selector as
+    //     // empty value
+    //     let pods = self
+    //         .k8s_logger_client
+    //         .get_k8s_clientset()
+    //         .get_pods(&logging_label_selector(), "")
+    //         .await?;
+    //     let data_plane_pods = pods
+    //         .into_iter()
+    //         .filter(|pod| {
+    //             let service_name = pod
+    //                 .metadata
+    //                 .labels
+    //                 .as_ref()
+    //                 .unwrap_or(&std::collections::BTreeMap::new())
+    //                 .get("app")
+    //                 .unwrap_or(&"".to_string())
+    //                 .clone();
+    //             DATA_PLANE_SERVICES.contains_key::<str>(&service_name)
+    //         })
+    //         .collect::<Vec<Pod>>();
+    //
+    //     self.get_logging_resources(data_plane_pods).await
+    // }
+    //
+    // async fn get_upgrade_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
+    //     // NOTE: We have to get historic logs of non-running pods, so passing field selector as
+    //     // empty value
+    //     let pods = self
+    //         .k8s_logger_client
+    //         .get_k8s_clientset()
+    //         .get_pods(&logging_label_selector(), "")
+    //         .await?;
+    //
+    //     let upgrade_pod = pods
+    //         .into_iter()
+    //         .filter(|pod| {
+    //             let service_name = pod
+    //                 .metadata
+    //                 .labels
+    //                 .as_ref()
+    //                 .unwrap_or(&std::collections::BTreeMap::new())
+    //                 .get("app")
+    //                 .unwrap_or(&"".to_string())
+    //                 .clone();
+    //             UPGRADE_JOB_SERVICE.contains_key::<str>(&service_name)
+    //         })
+    //         .collect::<Vec<Pod>>();
+    //
+    //     self.get_logging_resources(upgrade_pod).await
+    // }
+    //
+    // async fn get_callhome_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
+    //     // NOTE: We have to get historic logs of non-running pods, so passing field selector as
+    //     // empty value
+    //     let pods = self
+    //         .k8s_logger_client
+    //         .get_k8s_clientset()
+    //         .get_pods(&logging_label_selector(), "")
+    //         .await?;
+    //
+    //     let callhome_pod = pods
+    //         .into_iter()
+    //         .filter(|pod| {
+    //             let service_name = pod
+    //                 .metadata
+    //                 .labels
+    //                 .as_ref()
+    //                 .unwrap_or(&std::collections::BTreeMap::new())
+    //                 .get("app")
+    //                 .unwrap_or(&"".to_string())
+    //                 .clone();
+    //             CALLHOME_JOB_SERVICE.contains_key::<str>(&service_name)
+    //         })
+    //         .collect::<Vec<Pod>>();
+    //
+    //     self.get_logging_resources(callhome_pod).await
+    // }
+    //
+    // async fn get_nats_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
+    //     // NOTE: We have to get historic logs of non-running pods, so passing field selector as
+    //     // empty value
+    //     let pods = self
+    //         .k8s_logger_client
+    //         .get_k8s_clientset()
+    //         .get_pods(&logging_label_selector(), "")
+    //         .await?;
+    //
+    //     let nats_pods = pods
+    //         .into_iter()
+    //         .filter(|pod| {
+    //             let service_name = pod
+    //                 .metadata
+    //                 .labels
+    //                 .as_ref()
+    //                 .unwrap_or(&std::collections::BTreeMap::new())
+    //                 .get("app")
+    //                 .unwrap_or(&"".to_string())
+    //                 .clone();
+    //             NATS_JOB_SERVICE.contains_key::<str>(&service_name)
+    //         })
+    //         .collect::<Vec<Pod>>();
+    //
+    //     self.get_logging_resources(nats_pods).await
+    // }
 
-    async fn get_control_plane_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
-        // NOTE: We have to get historic logs of non-running pods, so passing field selector as
-        // empty value
+    async fn get_logging_services(
+        &self,
+        host_name_required_svcs: &HashMap<&'static str, bool>,
+    ) -> Result<HashSet<LogResource>, LogError> {
         let pods = self
             .k8s_logger_client
             .get_k8s_clientset()
             .get_pods(&logging_label_selector(), "")
             .await?;
 
-        let control_plane_pods = pods
-            .into_iter()
-            .filter(|pod| {
-                let service_name = pod
-                    .metadata
-                    .labels
-                    .as_ref()
-                    .unwrap_or(&std::collections::BTreeMap::new())
-                    .get("app")
-                    .unwrap_or(&"".to_string())
-                    .clone();
-                CONTROL_PLANE_SERVICES.contains_key::<str>(&service_name)
-            })
-            .collect::<Vec<Pod>>();
-
-        self.get_logging_resources(control_plane_pods).await
-    }
-
-    async fn get_data_plane_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
-        // NOTE: We have to get historic logs of non-running pods, so passing field selector as
-        // empty value
-        let pods = self
-            .k8s_logger_client
-            .get_k8s_clientset()
-            .get_pods(&logging_label_selector(), "")
-            .await?;
-        let data_plane_pods = pods
-            .into_iter()
-            .filter(|pod| {
-                let service_name = pod
-                    .metadata
-                    .labels
-                    .as_ref()
-                    .unwrap_or(&std::collections::BTreeMap::new())
-                    .get("app")
-                    .unwrap_or(&"".to_string())
-                    .clone();
-                DATA_PLANE_SERVICES.contains_key::<str>(&service_name)
-            })
-            .collect::<Vec<Pod>>();
-
-        self.get_logging_resources(data_plane_pods).await
-    }
-
-    async fn get_upgrade_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
-        // NOTE: We have to get historic logs of non-running pods, so passing field selector as
-        // empty value
-        let pods = self
-            .k8s_logger_client
-            .get_k8s_clientset()
-            .get_pods(&logging_label_selector(), "")
-            .await?;
-
-        let upgrade_pod = pods
-            .into_iter()
-            .filter(|pod| {
-                let service_name = pod
-                    .metadata
-                    .labels
-                    .as_ref()
-                    .unwrap_or(&std::collections::BTreeMap::new())
-                    .get("app")
-                    .unwrap_or(&"".to_string())
-                    .clone();
-                UPGRADE_JOB_SERVICE.contains_key::<str>(&service_name)
-            })
-            .collect::<Vec<Pod>>();
-
-        self.get_logging_resources(upgrade_pod).await
-    }
-
-    async fn get_callhome_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
-        // NOTE: We have to get historic logs of non-running pods, so passing field selector as
-        // empty value
-        let pods = self
-            .k8s_logger_client
-            .get_k8s_clientset()
-            .get_pods(&logging_label_selector(), "")
-            .await?;
-
-        let callhome_pod = pods
-            .into_iter()
-            .filter(|pod| {
-                let service_name = pod
-                    .metadata
-                    .labels
-                    .as_ref()
-                    .unwrap_or(&std::collections::BTreeMap::new())
-                    .get("app")
-                    .unwrap_or(&"".to_string())
-                    .clone();
-                CALLHOME_JOB_SERVICE.contains_key::<str>(&service_name)
-            })
-            .collect::<Vec<Pod>>();
-
-        self.get_logging_resources(callhome_pod).await
-    }
-
-    async fn get_nats_logging_services(&self) -> Result<HashSet<LogResource>, LogError> {
-        // NOTE: We have to get historic logs of non-running pods, so passing field selector as
-        // empty value
-        let pods = self
-            .k8s_logger_client
-            .get_k8s_clientset()
-            .get_pods(&logging_label_selector(), "")
-            .await?;
-
-        let nats_pods = pods
-            .into_iter()
-            .filter(|pod| {
-                let service_name = pod
-                    .metadata
-                    .labels
-                    .as_ref()
-                    .unwrap_or(&std::collections::BTreeMap::new())
-                    .get("app")
-                    .unwrap_or(&"".to_string())
-                    .clone();
-                NATS_JOB_SERVICE.contains_key::<str>(&service_name)
-            })
-            .collect::<Vec<Pod>>();
-
-        self.get_logging_resources(nats_pods).await
+        self.get_logging_resources(pods, host_name_required_svcs)
+            .await
     }
 }
 
-fn is_host_name_required(service_name: String) -> bool {
-    HOST_NAME_REQUIRED_SERVICES.contains_key(service_name.as_str())
+fn is_host_name_required(
+    service_name: String,
+    host_name_required_svcs: &HashMap<&'static str, bool>,
+) -> bool {
+    host_name_required_svcs.contains_key(service_name.as_str())
 }
 
 /// Creates specified directory path if not already exist
@@ -438,9 +456,8 @@ pub(crate) trait Logger {
         resources: HashSet<LogResource>,
         working_dir: String,
     ) -> Result<(), LogError>;
-    async fn get_data_plane_logging_services(&self) -> Result<HashSet<LogResource>, LogError>;
-    async fn get_control_plane_logging_services(&self) -> Result<HashSet<LogResource>, LogError>;
-    async fn get_upgrade_logging_services(&self) -> Result<HashSet<LogResource>, LogError>;
-    async fn get_callhome_logging_services(&self) -> Result<HashSet<LogResource>, LogError>;
-    async fn get_nats_logging_services(&self) -> Result<HashSet<LogResource>, LogError>;
+    async fn get_logging_services(
+        &self,
+        host_name_required_svcs: &HashMap<&'static str, bool>,
+    ) -> Result<HashSet<LogResource>, LogError>;
 }

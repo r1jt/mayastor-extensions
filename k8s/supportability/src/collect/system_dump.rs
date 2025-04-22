@@ -1,16 +1,14 @@
 use crate::{
     collect::{
         archive, common,
-        common::{DumpConfig, Stringer},
-        constants::MAYASTOR_SERVICE,
+        common::DumpConfig,
         error::Error,
         k8s_resources::k8s_resource_dump::K8sResourceDumperClient,
-        logs::{LogCollection, LogError, LogResource, Logger},
+        logs::{LogCollection, LogError, Logger},
         persistent_store::etcd::EtcdStore,
         resources::{
             node::NodeClientWrapper, pool::PoolClientWrapper,
-            snapshot::VolumeSnapshotClientWrapper, traits::Topologer, volume::VolumeClientWrapper,
-            Resourcer,
+            snapshot::VolumeSnapshotClientWrapper, volume::VolumeClientWrapper, Resourcer,
         },
         rest_wrapper::RestClient,
         utils::{flush_tool_log_file, init_tool_log_file, write_to_log_file},
@@ -18,6 +16,7 @@ use crate::{
     log,
 };
 use futures::future;
+use std::collections::HashMap;
 use std::{path::PathBuf, process};
 
 /// SystemDumper interacts with various services to collect information like mayastor resource(s),
@@ -126,30 +125,13 @@ impl SystemDumper {
     /// Collect and dump loki logs.
     pub(crate) async fn collect_and_dump_loki_logs(
         &mut self,
-        node_topologer: Option<Box<dyn Topologer>>,
+        host_name_required_svcs: &HashMap<&'static str, bool>,
     ) -> Result<(), LogError> {
         // Fetch required logging resources
-        let mut resources = self.logger.get_control_plane_logging_services().await?;
-        resources.extend(self.logger.get_data_plane_logging_services().await?);
-        resources.extend(self.logger.get_upgrade_logging_services().await?);
-        resources.extend(self.logger.get_callhome_logging_services().await?);
-        resources.extend(self.logger.get_nats_logging_services().await?);
-
-        // NOTE: MAYASTOR-IO services will not be available when MAYASTOR-IO pod is down.
-        //       Lets add information from mayastor node resources.
-        if let Some(topologer) = node_topologer {
-            topologer
-                .get_all_resource_info()
-                .iter()
-                .for_each(|node_topo| {
-                    resources.insert(LogResource {
-                        container_name: node_topo.get_container_name(),
-                        host_name: Some(node_topo.get_host_name()),
-                        label_selector: node_topo.get_label_selector().as_string(','),
-                        service_type: MAYASTOR_SERVICE.to_string(),
-                    });
-                });
-        }
+        let resources = self
+            .logger
+            .get_logging_services(host_name_required_svcs)
+            .await?;
 
         let _ = write_to_log_file(format!(
             "Collecting logs of following services: \n {resources:#?}"
@@ -164,7 +146,10 @@ impl SystemDumper {
     }
 
     /// Dumps the state of the system
-    pub(crate) async fn dump_system(&mut self) -> Result<(), Error> {
+    pub(crate) async fn dump_system(
+        &mut self,
+        host_name_required_svcs: &HashMap<&'static str, bool>,
+    ) -> Result<(), Error> {
         let mut errors: Vec<Error> = Vec::new();
 
         log("Collecting topology information...".to_string());
@@ -218,7 +203,7 @@ impl SystemDumper {
             Err(e) => errors.push(Error::ResourceError(e)),
         };
 
-        let node_topologer = match NodeClientWrapper::new(self.rest_client.clone())
+        match NodeClientWrapper::new(self.rest_client.clone())
             .get_topologer(None)
             .await
         {
@@ -240,7 +225,10 @@ impl SystemDumper {
         log("Completed collection of topology information".to_string());
 
         if !self.disable_log_collection {
-            if let Err(error) = self.collect_and_dump_loki_logs(node_topologer).await {
+            if let Err(error) = self
+                .collect_and_dump_loki_logs(host_name_required_svcs)
+                .await
+            {
                 log("Error occurred while collecting logs".to_string());
                 errors.push(Error::LogCollectionError(error));
             }
@@ -299,11 +287,6 @@ impl SystemDumper {
             e
         })?;
         Ok(())
-    }
-
-    /// Get the rest client clone.
-    pub(crate) fn rest_client(&self) -> RestClient {
-        self.rest_client.clone()
     }
 
     fn delete_temporary_directory(&self) -> Result<(), Error> {

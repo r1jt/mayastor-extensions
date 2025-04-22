@@ -9,8 +9,9 @@ use plugin::{
         SetPropertyResources, UnCordonResources,
     },
     rest_wrapper::RestClient,
-    ExecuteOperation,
+    ExecuteDumpOperation, ExecuteOperation,
 };
+use std::collections::HashMap;
 use std::{ops::Deref, path::PathBuf};
 use supportability::DumpArgs;
 use upgrade::upgrade::DeleteUpgradeArgs;
@@ -128,6 +129,21 @@ pub enum DeleteResources {
     },
 }
 
+/// Defines the name of agent-ha-node
+pub(crate) const AGENT_HA_NODE_SERVICE: &str = "agent-ha-node";
+
+/// Defines the name of the csi node daemon service
+pub(crate) const CSI_NODE_SERVICE: &str = "csi-node";
+
+/// Defines the name of the etcd service
+pub(crate) const ETCD_SERVICE: &str = "etcd";
+
+/// Defines the name of mayastor service
+pub(crate) const MAYASTOR_SERVICE: &str = "io-engine";
+
+/// Defines the name of nats services
+pub(crate) const NATS_SERVICE: &str = "nats";
+
 #[async_trait::async_trait(?Send)]
 impl ExecuteOperation for Operations {
     type Args = CliArgs;
@@ -149,11 +165,21 @@ impl ExecuteOperation for Operations {
             Operations::Cordon(resource) => resource.execute(cli_args).await?,
             Operations::Uncordon(resource) => resource.execute(cli_args).await?,
             Operations::Dump(resources) => {
+                let host_name_required_svcs: HashMap<&'static str, bool> = HashMap::from([
+                    (MAYASTOR_SERVICE, true),
+                    (ETCD_SERVICE, true),
+                    (CSI_NODE_SERVICE, true),
+                    (AGENT_HA_NODE_SERVICE, true),
+                    (NATS_SERVICE, true),
+                ]);
                 // todo: build and pass arguments
-                resources.execute(&()).await.inspect_err(|_| {
-                    // todo: check why is this here, can it be removed?
-                    println!("Partially collected dump information: ");
-                })?
+                resources
+                    .execute(&(), host_name_required_svcs)
+                    .await
+                    .inspect_err(|_| {
+                        // todo: check why is this here, can it be removed?
+                        println!("Partially collected dump information: ");
+                    })?
             }
             Operations::Upgrade(resources) => {
                 // todo: use generic execute trait
