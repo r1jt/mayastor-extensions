@@ -743,7 +743,7 @@ loki:
     persistence:
       storageClass: "mayastor-loki-localpv"
       size: 5Gi
-        
+
   deploymentMode: SingleBinary
 
   lokiCanary:
@@ -806,6 +806,10 @@ alloy:
     configMap:
       create: true
       content: |
+        livedebugging {
+          enabled = true
+        }
+
         discovery.kubernetes "{{ .Release.Name }}_pods_name" {
           role = "pod"
         }
@@ -889,4 +893,4 @@ alloy:
           }
           external_labels = {}
         }
-        
+

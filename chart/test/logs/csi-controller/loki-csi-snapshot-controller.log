@@ -1,3 +1,0 @@
-2025-04-14T14:53:42.480829197Z stderr F I0414 14:53:42.480412       1 main.go:141] Version: v6.3.3
-2025-04-14T14:53:42.483435275Z stderr F I0414 14:53:42.483165       1 main.go:190] Start NewCSISnapshotController with kubeconfig [] resyncPeriod [15m0s]
-2025-04-14T14:53:42.515757452Z stderr F I0414 14:53:42.515355       1 snapshot_controller_base.go:212] Starting snapshot controller

@@ -1,7 +1,0 @@
-2025-04-14T14:52:27.650297641Z stderr F I0414 14:52:27.649690       1 main.go:135] Version: v2.10.0
-2025-04-14T14:52:27.650350958Z stderr F I0414 14:52:27.649871       1 main.go:136] Running node-driver-registrar in mode=
-2025-04-14T14:52:27.732650341Z stderr F I0414 14:52:27.730900       1 node_register.go:55] Starting Registration Server at: /registration/io.openebs.csi-mayastor-reg.sock
-2025-04-14T14:52:27.732680343Z stderr F I0414 14:52:27.731194       1 node_register.go:64] Registration Server started at: /registration/io.openebs.csi-mayastor-reg.sock
-2025-04-14T14:52:27.732684812Z stderr F I0414 14:52:27.731572       1 node_register.go:88] Skipping HTTP server because endpoint is set to: ""
-2025-04-14T14:52:27.9639453Z stderr F I0414 14:52:27.962290       1 main.go:90] Received GetInfo call: &InfoRequest{}
-2025-04-14T14:52:28.011727219Z stderr F I0414 14:52:28.010638       1 main.go:101] Received NotifyRegistrationStatus call: &RegistrationStatus{PluginRegistered:true,Error:,}
