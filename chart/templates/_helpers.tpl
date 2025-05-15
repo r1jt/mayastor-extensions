@@ -300,7 +300,13 @@ Get the Jaeger URL
           {{- fail "etcd.externalUrl must be set" }}
         {{- end }}
     {{- else }}
-        {{- .Release.Name }}-etcd:{{ .Values.etcd.service.port }}
+        {{- /*
+           Using the default template function to not drop compatibility for older values, could use below line
+           in the next major release. We're leaning towards the new values, unless the older value is being used.
+
+           {{- .Release.Name }}-etcd:{{ .Values.etcd.service.ports.client }}
+         */ -}}
+        {{- .Release.Name }}-etcd:{{ default .Values.etcd.service.ports.client .Values.etcd.service.port }}
     {{- end }}
 {{- end }}
 
