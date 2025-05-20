@@ -30,7 +30,7 @@ dependencies:
     condition: crds.enabled
   - name: etcd
     repository: https://charts.bitnami.com/bitnami
-    version: 11.3.4
+    version: 11.3.6
     condition: etcd.enabled
   - name: jaeger-operator
     version: 2.50.1
