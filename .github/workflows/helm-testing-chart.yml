@@ -11,6 +11,8 @@ on:
 jobs:
   helm-testing-chart:
     runs-on: ubuntu-latest
+    env:
+      TMPDIR: /tmp
     steps:
       - uses: actions/checkout@v4
         with:
