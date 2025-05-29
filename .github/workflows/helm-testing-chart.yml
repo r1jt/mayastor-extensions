@@ -11,8 +11,6 @@ on:
 jobs:
   helm-testing-chart:
     runs-on: ubuntu-22.04
-    env:
-      TMPDIR: /tmp
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,6 +31,8 @@ jobs:
         run: |
           branch="${{ github.ref_name }}"
           nix-shell --pure --run "./scripts/helm/publish-chart-yaml.sh --check-chart "$branch"" ./scripts/helm/shell.nix
+      - name: Create tmp directory
+        run: mkdir -p /home/runner/work/_temp
       - name: Publish Mayastor Helm chart
         uses: stefanprodan/helm-gh-pages@v1.7.0
         with:
