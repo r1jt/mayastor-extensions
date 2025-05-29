@@ -10,7 +10,7 @@ on:
 
 jobs:
   helm-testing-chart:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     env:
       TMPDIR: /tmp
     steps:
